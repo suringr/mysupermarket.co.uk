@@ -1,0 +1,14 @@
+{
+  "id": "uk.food-alerts",
+  "title": "UK Food Alerts",
+  "type": "alerts",
+  "source": {
+    "name": "Food Standards Agency",
+    "url": "https://data.food.gov.uk/food-alerts/id/rss/recent"
+  },
+  "region": "uk",
+  "status": "unknown",
+  "confidence": "low",
+  "last_checked_utc": "2026-02-03T20:33:05.678Z",
+  "reason": "Fetch failed (406)"
+}

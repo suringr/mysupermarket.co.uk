@@ -1,0 +1,20 @@
+{
+  "id": "uk.eggs.pressure",
+  "title": "UK Eggs Pressure",
+  "type": "price_signal",
+  "source": {
+    "name": "Office for National Statistics",
+    "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/j9dm/mm23/data"
+  },
+  "region": "uk",
+  "status": "stable",
+  "confidence": "medium",
+  "last_checked_utc": "2026-02-03T20:33:03.949Z",
+  "last_official_update": "2021-12-31T22:00:00.000Z",
+  "signal": {
+    "yoy_percent": 0.5,
+    "current_price_index": 222,
+    "period": "2022 JAN",
+    "is_stale": true
+  }
+}
