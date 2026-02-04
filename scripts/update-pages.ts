@@ -57,8 +57,13 @@ async function main() {
     // 3. Inflation Trends
     const inflationData = data.find(d => d.id === "uk.food-inflation");
     if (inflationData) {
+        // Try to find notices data, but don't fail if missing (it's new)
+        let noticesData = data.find(d => d.id === "uk.inflation.notices");
+
+        // If not compatible type or missing, noticesData will be undefined
+
         ensureDir(path.join(OUT_DIR, "inflation-trends"));
-        const trendsHub = layout("Inflation Trends", inflationTrendsHub(inflationData));
+        const trendsHub = layout("Inflation Trends", inflationTrendsHub(inflationData, noticesData));
         fs.writeFileSync(path.join(OUT_DIR, "inflation-trends", "index.html"), trendsHub);
         console.log("Wrote public/inflation-trends/index.html");
     }

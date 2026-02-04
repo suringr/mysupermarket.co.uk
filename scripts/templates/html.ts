@@ -129,12 +129,25 @@ export function productDetail(item: ProviderOutput): string {
     `;
 }
 
-export function inflationTrendsHub(item: ProviderOutput): string {
+export function inflationTrendsHub(item: ProviderOutput, noticesProvider?: ProviderOutput): string {
     const signal = item.signal as InflationSignal;
+    const notices = noticesProvider?.items || [];
+    const hasNotices = notices.length > 0;
+
+    const noticeCards = hasNotices
+        ? notices.map((n: any) => `
+            <a href="${n.url}" target="_blank" class="card" style="text-decoration:none; color:inherit; display:block;">
+                <h3>${n.title}</h3>
+                <div class="meta">${new Date(n.date).toLocaleDateString()} • ${n.source_name}</div>
+                ${n.summary ? `<p style="margin-top:10px; font-size:0.9rem;">${n.summary}</p>` : ''}
+                <div style="margin-top:10px; color:#2196f3; font-weight:bold; font-size:0.9rem;">View Notice &nearr;</div>
+            </a>
+        `).join("")
+        : `<p class="meta">No notices yet.</p>`;
 
     return `
-        <h2>Food Inflation Trends</h2>
-        <div class="signal-grid" style="margin-top:30px;">
+        <h2>Inflation Metrics</h2>
+        <div class="signal-grid" style="margin-top:20px; margin-bottom: 50px;">
             <div class="card">
                 <h3>UK Food Inflation (YoY)</h3>
                 <div class="signal-value trend-up">${signal.food_inflation_yoy_percent}%</div>
@@ -146,6 +159,12 @@ export function inflationTrendsHub(item: ProviderOutput): string {
                 <div class="signal-value">--</div>
                 <div class="meta">Coming Soon</div>
             </div>
+        </div>
+
+        <h2>Inflation Notices</h2>
+        <p class="meta" style="margin-bottom:20px;">Official updates from ONS, DEFRA, and GOV.UK</p>
+        <div class="signal-grid">
+            ${noticeCards}
         </div>
         
         <div style="margin-top:40px;">

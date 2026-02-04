@@ -33,6 +33,14 @@ export interface InflationSignal {
     is_stale: boolean;
 }
 
+export interface InflationNotice {
+    date: string; // ISO-8601 publication date
+    title: string;
+    url: string;
+    source_name: string;
+    summary?: string; // optional, 1 factual sentence max
+}
+
 export interface GenericSignal {
     [key: string]: any;
 }
