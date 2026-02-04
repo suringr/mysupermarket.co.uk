@@ -4,20 +4,20 @@
     "title": "UK Food Alerts",
     "type": "alerts",
     "status": "unknown",
-    "updated": "2026-02-04T21:16:06.214Z"
+    "updated": "2026-02-04T21:33:35.907Z"
   },
   {
     "id": "uk.food-inflation",
     "title": "UK Food Inflation (CPI)",
     "type": "trend",
     "status": "outdated",
-    "updated": "2026-02-04T21:16:05.106Z"
+    "updated": "2026-02-04T21:33:35.783Z"
   },
   {
     "id": "uk.eggs.pressure",
     "title": "Eggs",
     "type": "price_signal",
     "status": "stable",
-    "updated": "2026-02-04T21:16:05.108Z"
+    "updated": "2026-02-04T21:33:35.780Z"
   }
 ]

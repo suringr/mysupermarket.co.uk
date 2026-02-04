@@ -25,7 +25,7 @@ export async function renderAlerts(path: string): Promise<string> {
              <div class="meta">${new Date(item.created).toLocaleDateString()}</div>
              <h3>${item.title}</h3>
              <p>${item.shortTitle || item.title}</p>
-             <div class="confidence-pill" style="display:inline-block; margin-top:10px;">${item.problem?.type || 'Alert'}</div>
+             <div class="confidence-pill">${item.problem?.type || 'Alert'}</div>
         </div>
     `).join("") : `<p>No alerts found for this category.</p>`;
 

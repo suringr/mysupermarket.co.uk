@@ -1,6 +1,6 @@
 import { fetchData } from "../data";
 import { renderLayout } from "../layout";
-import { ProviderOutput, InflationNotice } from "../../scripts/lib/types";
+import { ProviderOutput, InflationNotice, InflationSignal } from "../../../scripts/lib/types";
 
 export async function renderInflation(): Promise<string> {
     const [metrics, noticesProvider] = await Promise.all([
@@ -9,10 +9,11 @@ export async function renderInflation(): Promise<string> {
     ]);
 
     // Metrics
-    const yoy = metrics?.signal?.food_inflation_yoy_percent;
+    const signal = metrics?.signal as InflationSignal | undefined;
+    const yoy = signal?.food_inflation_yoy_percent;
     const yoyFormatted = yoy ? `${yoy}%` : "--";
     const status = metrics?.status || "unknown";
-    const period = metrics?.signal?.period || "Unknown";
+    const period = signal?.period || "Unknown";
 
     const cardHtml = `
             <div class="card">
@@ -21,7 +22,7 @@ export async function renderInflation(): Promise<string> {
                 <div class="meta">Reference Period: ${period}</div>
             </div>
             <!-- Placeholder for MoM or other macro metrics -->
-             <div class="card" style="opacity:0.6;">
+             <div class="card card-placeholder">
                 <h3>Month-on-Month</h3>
                 <div class="signal-value">--</div>
                 <div class="meta">Coming Soon</div>
@@ -32,11 +33,11 @@ export async function renderInflation(): Promise<string> {
     let noticesHtml = "";
     if (noticesProvider && Array.isArray(noticesProvider.items)) {
         noticesHtml = (noticesProvider.items as InflationNotice[]).map((n: InflationNotice) => `
-            <a href="${n.url}" target="_blank" class="card" style="text-decoration:none; color:inherit; display:block;">
+            <a href="${n.url}" target="_blank" class="card">
                 <h3>${n.title}</h3>
                 <div class="meta">${formatDate(n.date)} • ${n.source_name}</div>
-                <p style="margin-top:10px; font-size:0.9rem;">${n.summary || ''}</p>
-                <div style="margin-top:10px; color:#2196f3; font-weight:bold; font-size:0.9rem;">View Notice &nearr;</div>
+                <p class="meta-summary">${n.summary || ''}</p>
+                <div class="action-link">View Notice &nearr;</div>
             </a>
         `).join("");
     } else {
@@ -45,7 +46,7 @@ export async function renderInflation(): Promise<string> {
 
     const content = `
         <h2>Inflation Metrics</h2>
-        <div class="signal-grid" style="margin-top:20px; margin-bottom: 50px;">
+        <div class="signal-grid section-spacer">
             ${cardHtml}
         </div>
 
@@ -55,7 +56,7 @@ export async function renderInflation(): Promise<string> {
             ${noticesHtml}
         </div>
         
-        <div style="margin-top:40px;">
+        <div class="section-top">
             <h3>Source Data</h3>
             <p>Derived from <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7c8/mm23/data">Office for National Statistics</a> (CPI).</p>
         </div>

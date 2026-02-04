@@ -7,7 +7,6 @@
     "refresh:data": "ts-node scripts/refresh-data.ts",
     "build:client": "esbuild src/client/app.ts --bundle --outfile=public/assets/app.js --minify --sourcemap",
     "build": "npm run build:client && npm run export:site",
-    "build:all": "npm run refresh:data && npm run build",
     "export:site": "ts-node scripts/export-site.ts",
     "start": "npx serve dist -s"
   },

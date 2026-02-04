@@ -1,6 +1,6 @@
 import { fetchData } from "../data";
 import { renderLayout } from "../layout";
-import { ProviderOutput, Confidence } from "../../scripts/lib/types";
+import { ProviderOutput, Confidence, InflationSignal } from "../../../scripts/lib/types";
 
 export async function renderHome(): Promise<string> {
     // Parallel fetch for speed
@@ -19,8 +19,9 @@ export async function renderHome(): Promise<string> {
     // Let's assume we link to /price-pressure
 
     // Card 2: Inflation
-    const inflationVal = inflation?.signal?.food_inflation_yoy_percent
-        ? `${inflation.signal.food_inflation_yoy_percent}%`
+    const inflationSignal = inflation?.signal as InflationSignal | undefined;
+    const inflationVal = inflationSignal?.food_inflation_yoy_percent
+        ? `${inflationSignal.food_inflation_yoy_percent}%`
         : "--";
     const inflationStatus = inflation?.status || "unknown";
 
@@ -31,27 +32,27 @@ export async function renderHome(): Promise<string> {
     const content = `
     <div class="signal-grid">
         <!-- Card 1: Price Pressure -->
-        <a href="/price-pressure" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid #2196f3;">
+        <a href="/price-pressure" class="card border-left-info">
             <h3>Price Pressure</h3>
             <div class="signal-value">High</div>
             <div class="meta">Tracking core commodities</div>
-            <div style="margin-top:10px; color:#2196f3; font-weight:bold; font-size:0.9rem;">View Analysis &rarr;</div>
+            <div class="action-link">View Analysis &rarr;</div>
         </a>
 
         <!-- Card 2: Inflation -->
-        <a href="/inflation-trends" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid ${getColor(inflationStatus)};">
+        <a href="/inflation-trends" class="card ${getBorderClass(inflationStatus)}">
             <h3>UK Food Inflation</h3>
             <div class="signal-value ${getTrendClass(inflationStatus)}">${inflationVal}</div>
             <div class="meta">Official ONS Data</div>
-            <div style="margin-top:10px; color:#2196f3; font-weight:bold; font-size:0.9rem;">View Trends &rarr;</div>
+            <div class="action-link">View Trends &rarr;</div>
         </a>
 
         <!-- Card 3: Alerts -->
-        <a href="/alerts" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid ${alertCount > 0 ? '#d32f2f' : '#388e3c'};">
+        <a href="/alerts" class="card ${alertCount > 0 ? 'border-left-bad' : 'border-left-good'}">
             <h3>Safety Alerts</h3>
             <div class="signal-value">${alertCount} Active</div>
             <div class="meta">Recalls & Allergy Warnings</div>
-            <div style="margin-top:10px; color:#2196f3; font-weight:bold; font-size:0.9rem;">View Alerts &rarr;</div>
+            <div class="action-link">View Alerts &rarr;</div>
         </a>
     </div>
     `;
@@ -59,10 +60,10 @@ export async function renderHome(): Promise<string> {
     return renderLayout("Dashboard", content, false);
 }
 
-function getColor(status: string): string {
-    if (status === 'rising' || status === 'alert') return '#d32f2f'; // Red
-    if (status === 'easing' || status === 'safe') return '#388e3c'; // Green
-    return '#f57c00'; // Orange
+function getBorderClass(status: string): string {
+    if (status === 'rising' || status === 'alert') return 'border-left-bad';
+    if (status === 'easing' || status === 'safe') return 'border-left-good';
+    return 'border-left-warn';
 }
 
 function getTrendClass(status: string): string {

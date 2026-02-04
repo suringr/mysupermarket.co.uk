@@ -20,13 +20,42 @@ function rmrf(p: string) {
     }
 }
 
+const MAX_RETRIES = 5;
+const RETRY_DELAY = 500;
+
+function sleep(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function copyFileWithRetry(src: string, dest: string, retries = 0) {
+    try {
+        fs.copyFileSync(src, dest);
+    } catch (err: any) {
+        if (retries < MAX_RETRIES && (err.code === 'EBUSY' || err.code === 'EPERM')) {
+            const delay = RETRY_DELAY * (retries + 1);
+            console.warn(`⚠️  Locked: ${path.basename(src)}. Retrying in ${delay}ms...`);
+            // Synchronous sleep for a sync script is fine, or we use a busy loop
+            const start = Date.now();
+            while (Date.now() - start < delay) { }
+            copyFileWithRetry(src, dest, retries + 1);
+        } else {
+            console.error(`❌ Failed to copy ${src} -> ${dest}: ${err.message}`);
+            throw err;
+        }
+    }
+}
+
 function copyDir(src: string, dest: string) {
-    fs.mkdirSync(dest, { recursive: true });
+    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+
     for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
         const s = path.join(src, entry.name);
         const d = path.join(dest, entry.name);
-        if (entry.isDirectory()) copyDir(s, d);
-        else fs.copyFileSync(s, d);
+        if (entry.isDirectory()) {
+            copyDir(s, d);
+        } else {
+            copyFileWithRetry(s, d);
+        }
     }
 }
 
