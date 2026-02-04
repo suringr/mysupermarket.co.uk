@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Static reference site for UK supermarket trends",
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist",
     "refresh:data": "ts-node scripts/refresh-data.ts",
-    "update:pages": "ts-node scripts/update-pages.ts",
+    "build:client": "esbuild src/client/app.ts --bundle --outfile=public/assets/app.js --minify --sourcemap",
+    "build": "npm run build:client && npm run export:site",
+    "build:all": "npm run refresh:data && npm run build",
     "export:site": "ts-node scripts/export-site.ts",
-    "build:all": "npm run refresh:data && npm run update:pages && npm run export:site"
+    "start": "npx serve dist -s"
   },
   "keywords": [
     "supermarket",
@@ -22,6 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
+    "esbuild": "^0.27.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
