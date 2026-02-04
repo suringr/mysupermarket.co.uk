@@ -1,26 +1,53 @@
-
 name: Refresh and Publish
 
 on:
+  pull_request:
+    branches: [ main, init ]
   schedule:
-    - cron: '0 8 * * 1' # Weekly on Mondays at 08:00 UTC
+    - cron: "0 */6 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: publish-dist
+  cancel-in-progress: true
 
 permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  pr-check:
+    name: PR check (build only)
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+  publish:
+    name: Build site + publish dist (schedule/manual)
+    if: ${{ github.event_name != 'pull_request' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
 
       - name: Install Dependencies
         run: npm ci
