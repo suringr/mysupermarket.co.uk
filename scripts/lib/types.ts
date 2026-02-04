@@ -18,24 +18,43 @@ export interface ProviderSource {
     url: string;
 }
 
+export interface PricePressureSignal {
+    yoy_percent: number;
+    period: string;
+    is_stale: boolean;
+    current_price_index?: number;
+    price?: number;     // Optional raw price if available
+    unit?: string;      // e.g. "per dozen"
+}
+
+export interface InflationSignal {
+    food_inflation_yoy_percent: number;
+    period: string;
+    is_stale: boolean;
+}
+
+export interface GenericSignal {
+    [key: string]: any;
+}
+
 export interface ProviderOutput {
     id: string;
     title: string;
     type: string;
     region: "uk";
-    status: string; // domain-specific (e.g., "fresh", "rising", "alert")
+    status: string; // "rising" | "stable" | "easing" | "alert" | "safe"
     confidence: Confidence;
     last_checked_utc: string; // ISO
     source: ProviderSource;
 
-    // Optional / Domain Specific
-    signal?: Record<string, any>; // For inflation/trends
+    // Domain Specific Signals
+    signal?: PricePressureSignal | InflationSignal | GenericSignal;
     items?: any[]; // For lists like alerts
     last_official_update?: string; // Date of official data
 
     // Failure / Fallback
-    reason?: string; // Failure reason if confidence is low or status is unknown/fallback
-    fetch_mode?: "http" | "browser"; // Debug info
+    reason?: string;
+    fetch_mode?: "http" | "browser";
 }
 
 export interface ProviderMetadata {

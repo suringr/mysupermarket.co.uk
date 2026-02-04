@@ -1,7 +1,11 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import { layout, homepage, statusPage } from "./templates/html";
+import {
+    layout, homepage,
+    pricePressureHub, productDetail,
+    inflationTrendsHub, alertsHub, alertsList
+} from "./templates/html";
 import { ProviderOutput } from "./lib/types";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
@@ -26,26 +30,60 @@ async function main() {
 
     const data = readData();
 
-    // Update Homepage
-    const homeHtml = layout("Dashboard", homepage(data));
+    // 1. Homepage
+    // Homepage is now static (gateway cards only), depends on no dynamic data
+    const homeHtml = layout("Dashboard", homepage(), false); // false = no home link on home
     fs.writeFileSync(path.join(OUT_DIR, "index.html"), homeHtml);
     console.log("Wrote public/index.html");
 
-    // Update Status Pages
-    data.forEach(item => {
-        let subDir = "";
-        if (item.id === "uk.food-alerts") subDir = "status/food-alerts";
-        if (item.id === "uk.food-inflation") subDir = "trends/food-inflation";
-        if (item.id === "uk.eggs.pressure") subDir = "prices/eggs";
+    // 2. Price Pressure Hub & Details
+    const productSignals = data.filter(d => d.type === "price_signal");
+    if (productSignals.length > 0) {
+        ensureDir(path.join(OUT_DIR, "price-pressure"));
+        const hubHtml = layout("Price Pressure", pricePressureHub(productSignals));
+        fs.writeFileSync(path.join(OUT_DIR, "price-pressure", "index.html"), hubHtml);
+        console.log("Wrote public/price-pressure/index.html");
 
-        if (subDir) {
-            const targetDir = path.join(OUT_DIR, subDir);
-            ensureDir(targetDir);
-            const pageHtml = layout(item.title, statusPage(item));
-            fs.writeFileSync(path.join(targetDir, "index.html"), pageHtml);
-            console.log(`Wrote public/${subDir}/index.html`);
-        }
-    });
+        productSignals.forEach(p => {
+            const slug = p.title.toLowerCase().replace(/\s+/g, '-');
+            const pDir = path.join(OUT_DIR, "price-pressure", slug);
+            ensureDir(pDir);
+            const detailHtml = layout(p.title, productDetail(p));
+            fs.writeFileSync(path.join(pDir, "index.html"), detailHtml);
+            console.log(`Wrote public/price-pressure/${slug}/index.html`);
+        });
+    }
+
+    // 3. Inflation Trends
+    const inflationData = data.find(d => d.id === "uk.food-inflation");
+    if (inflationData) {
+        ensureDir(path.join(OUT_DIR, "inflation-trends"));
+        const trendsHub = layout("Inflation Trends", inflationTrendsHub(inflationData));
+        fs.writeFileSync(path.join(OUT_DIR, "inflation-trends", "index.html"), trendsHub);
+        console.log("Wrote public/inflation-trends/index.html");
+    }
+
+    // 4. Alerts
+    const alertsData = data.find(d => d.id === "uk.food-alerts");
+    if (alertsData) {
+        // Hub
+        ensureDir(path.join(OUT_DIR, "alerts"));
+        const hubHtml = layout("Alerts & Recalls", alertsHub(alertsData));
+        fs.writeFileSync(path.join(OUT_DIR, "alerts", "index.html"), hubHtml);
+        console.log("Wrote public/alerts/index.html");
+
+        // Lists: All, Allergy, Recalls
+        const categories = ["all", "allergy", "recalls"];
+        categories.forEach(cat => {
+            const catDir = path.join(OUT_DIR, "alerts", cat);
+            ensureDir(catDir);
+            // Capitalize first letter
+            const title = cat.charAt(0).toUpperCase() + cat.slice(1);
+            const listHtml = layout(`${title} Alerts`, alertsList(alertsData, cat));
+            fs.writeFileSync(path.join(catDir, "index.html"), listHtml);
+            console.log(`Wrote public/alerts/${cat}/index.html`);
+        });
+    }
 
     console.log("Pages updated.");
 }

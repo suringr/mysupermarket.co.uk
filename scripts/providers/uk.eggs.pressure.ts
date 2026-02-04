@@ -1,11 +1,11 @@
 
 import { fetchHtml } from "../lib/fetch-layer";
-import { ProviderOutput, Confidence, ProviderMetadata } from "../lib/types";
+import { ProviderOutput, Confidence, ProviderMetadata, PricePressureSignal } from "../lib/types";
 import { buildFallback, readLastGood } from "../lib/file-system";
 
 const META: ProviderMetadata = {
     id: "uk.eggs.pressure",
-    title: "UK Eggs Pressure",
+    title: "Eggs",
     type: "price_signal",
     source: {
         name: "Office for National Statistics",

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UK Food Signals Dashboard: Official price pressure, inflation trends, and food alerts.">
-    <title>Dashboard | MySupermarket Signals</title>
+    <title>Alerts & Recalls | MySupermarket Signals</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" href="/assets/styles.css">
     <style>
@@ -24,34 +24,29 @@
             <div class="meta">Official UK Food Data • Last Updated: Wed, 04 Feb 2026 20:21:49 GMT</div>
         </header>
         <main>
+            <div style="margin-bottom: 20px;"><a href="/" class="back-link">← Dashboard</a></div>
             
+        <h2>Alerts & Recalls</h2>
+        <p>Official FSA food alerts from the last 30 days.</p>
+        <p class="meta">Total Active: 0</p>
+
+        <div class="signal-grid" style="margin-top:30px;">
+            <a href="/alerts/all/" class="card" style="text-decoration:none; color:inherit;">
+                <h3>Latest Alerts (All)</h3>
+                <div class="signal-value">0</div>
+                <div class="meta">View Full List &rarr;</div>
+            </a>
             
-        <div class="intro" style="text-align:center; margin-bottom:40px;">
-            <p style="font-size:1.2rem;">Tracking official indicators for UK food prices and safety.</p>
-        </div>
-        <div class="signal-grid">
-            <!-- Card 1: Price Pressure -->
-            <a href="/price-pressure/" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid #2196f3;">
-                <h2>Price Pressure</h2>
-                <div class="status">Product-level Signals</div>
-                <p class="meta">Official ONS item indices showing where prices are rising or easing.</p>
-                <div style="margin-top:10px; color:#2196f3; font-weight:bold;">View Hub &rarr;</div>
+            <a href="/alerts/allergy/" class="card" style="text-decoration:none; color:inherit;">
+                <h3>Allergy Alerts</h3>
+                <div class="status">Allergens/Mislabeled</div>
+                <div class="meta">View List &rarr;</div>
             </a>
 
-            <!-- Card 2: Inflation Trends -->
-            <a href="/inflation-trends/" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid #9c27b0;">
-                <h2>Inflation Trends</h2>
-                <div class="status">Macro Indicators</div>
-                <p class="meta">Headline food inflation rates and month-on-month trends.</p>
-                <div style="margin-top:10px; color:#9c27b0; font-weight:bold;">View Hub &rarr;</div>
-            </a>
-
-            <!-- Card 3: Alerts -->
-            <a href="/alerts/" class="card" style="text-decoration:none; color:inherit; display:block; border-left: 5px solid #f44336;">
-                <h2>Alerts & Recalls</h2>
-                <div class="status">Safety Signals</div>
-                <p class="meta">Real-time feed of FSA product recalls and allergy alerts.</p>
-                <div style="margin-top:10px; color:#f44336; font-weight:bold;">View Hub &rarr;</div>
+            <a href="/alerts/recalls/" class="card" style="text-decoration:none; color:inherit;">
+                <h3>Product Recalls</h3>
+                <div class="status">Safety Risks</div>
+                <div class="meta">View List &rarr;</div>
             </a>
         </div>
     
