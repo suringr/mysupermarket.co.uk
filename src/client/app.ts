@@ -22,22 +22,53 @@ async function route() {
     const app = document.getElementById("app");
     if (!app) return;
 
-    // Normalize path to remove trailing slash
-    const normalizedPath = path.length > 1 && path.endsWith("/") ? path.slice(0, -1) : path;
+    // Normalize: ensure trailing slash
+    const normalizedPath = path.endsWith("/") ? path : path + "/";
+
+    // Split into segments
+    const segments = normalizedPath.split("/").filter(s => s.length > 0);
 
     let html = "";
 
     try {
-        if (normalizedPath === "/" || normalizedPath === "/index.html") {
+        // Home
+        if (segments.length === 0) {
             html = await renderHome();
-        } else if (normalizedPath.startsWith("/price-pressure")) {
-            html = await renderPricePressure(normalizedPath);
-        } else if (normalizedPath.startsWith("/inflation-trends")) {
-            html = await renderInflation();
-        } else if (normalizedPath.startsWith("/alerts")) {
-            html = await renderAlerts(normalizedPath);
-        } else {
-            console.warn(`No route match for: ${normalizedPath}`);
+        }
+        // Hub pages
+        else if (segments.length === 1) {
+            const hub = segments[0];
+            if (hub === "price-pressure") {
+                html = await renderPricePressure();  // No slug = hub view
+            } else if (hub === "inflation-trends") {
+                html = await renderInflation();
+            } else if (hub === "alerts-recalls") {
+                html = await renderAlerts();
+            } else {
+                html = await renderNotFound();
+            }
+        }
+        // Detail pages: /price-pressure/eggs/
+        else if (segments.length === 2) {
+            const [hub, slug] = segments;
+
+            // Validate entity exists before rendering
+            const { ENTITIES_BY_HUB } = await import("../shared/entities");
+            const hubEntities = ENTITIES_BY_HUB[hub] || [];
+            const entityExists = hubEntities.some(e => e.id === slug);
+
+            if (!entityExists) {
+                html = await renderNotFound();  // Immediate 404 for invalid entities
+            } else if (hub === "price-pressure") {
+                html = await renderPricePressure(slug);  // Pass slug to renderer
+            } else if (hub === "alerts-recalls") {
+                html = await renderAlerts(slug);
+            } else {
+                // Hub exists but doesn't support detail pages yet
+                html = await renderNotFound();
+            }
+        }
+        else {
             html = await renderNotFound();
         }
 

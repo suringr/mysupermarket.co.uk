@@ -1,22 +1,21 @@
 import { fetchData } from "../data";
 import { renderLayout } from "../layout";
 
-export async function renderAlerts(path: string): Promise<string> {
+export async function renderAlerts(slug?: string): Promise<string> {
     const data = await fetchData("uk.food-alerts");
     const items = data?.items || [];
 
-    // Determine category from path: /alerts or /alerts/allergy etc.
-    const parts = path.split('/').filter(Boolean);
-    const category = parts[1] || "all"; // alerts/xy
+    // Determine category from slug (for future entity support)
+    const category = slug || "all";
 
     const filtered = category === "all" ? items : items.filter((i: any) => i.problem?.type === category);
 
     // Hub View (Categories)
     const hubNav = `
         <div class="hub-nav">
-            <a href="/alerts" class="${category === 'all' ? 'active' : ''}">All</a> |
-            <a href="/alerts/allergy" class="${category === 'allergy' ? 'active' : ''}">Allergy</a> |
-            <a href="/alerts/recall" class="${category === 'recall' ? 'active' : ''}">Recalls</a>
+            <a href="/alerts-recalls/" class="${category === 'all' ? 'active' : ''}">All</a> |
+            <a href="/alerts-recalls/allergy/" class="${category === 'allergy' ? 'active' : ''}">Allergy</a> |
+            <a href="/alerts-recalls/recall/" class="${category === 'recall' ? 'active' : ''}">Recalls</a>
         </div>
     `;
 

@@ -1,11 +1,6 @@
-/**
- * Generate static route HTML pages from template
- * Adapted from NextReset's update-game-pages.ts
- */
-
 import * as fs from "fs";
 import * as path from "path";
-import { ROUTES } from "../src/shared/routes";
+import { ALL_ROUTES } from "../src/shared/routes";
 
 const TEMPLATE_PATH = path.join(__dirname, "templates", "page.template.html");
 const PUBLIC_DIR = path.join(process.cwd(), "public");
@@ -19,17 +14,16 @@ function generatePage(route: { path: string; title: string }) {
     html = html.replace(/__PATH__/g, route.path);
 
     // Determine output path
-    let outputPath: string;
-    if (route.path === "/") {
-        outputPath = path.join(PUBLIC_DIR, "index.html");
-    } else {
-        // e.g., /price-pressure/ -> public/price-pressure/index.html
-        const dirPath = path.join(PUBLIC_DIR, route.path);
-        if (!fs.existsSync(dirPath)) {
-            fs.mkdirSync(dirPath, { recursive: true });
-        }
-        outputPath = path.join(dirPath, "index.html");
+    // FIX: Strip leading slash to avoid absolute path issues
+    const routeDir = route.path === "/" ? "" : route.path.replace(/^\//, "");
+    const dirPath = path.join(PUBLIC_DIR, routeDir);
+
+    // Ensure directory exists
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true });
     }
+
+    const outputPath = path.join(dirPath, "index.html");
 
     // Write file
     fs.writeFileSync(outputPath, html, "utf-8");
@@ -39,11 +33,11 @@ function generatePage(route: { path: string; title: string }) {
 function main() {
     console.log("Generating static route pages...\n");
 
-    ROUTES.forEach(route => {
+    ALL_ROUTES.forEach(route => {
         generatePage(route);
     });
 
-    console.log(`\n✅ Generated ${ROUTES.length} route pages`);
+    console.log(`\n✅ Generated ${ALL_ROUTES.length} route pages (${ALL_ROUTES.length - 4} hub pages + ${ALL_ROUTES.length - (ALL_ROUTES.length - 4)} detail pages)`);
 }
 
 main();
