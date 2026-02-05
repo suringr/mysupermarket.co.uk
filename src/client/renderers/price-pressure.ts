@@ -1,6 +1,19 @@
 import { fetchData } from "../data";
 import { renderLayout } from "../layout";
-import { ProviderOutput } from "../../scripts/lib/types";
+import { ProviderOutput } from "../../../scripts/lib/types";
+
+/**
+ * Safely format ISO date strings for display.
+ * Fallback to "Unknown" for invalid or missing dates.
+ */
+function formatDate(dateStr?: string): string {
+    if (!dateStr) return "Unknown";
+    const date = new Date(dateStr);
+    if (isNaN(date.getTime())) return "Unknown";
+
+    // Using YYYY-MM-DD for stability as requested
+    return date.toISOString().slice(0, 10);
+}
 
 export async function renderPricePressure(slug?: string): Promise<string> {
     if (!slug) {
@@ -9,13 +22,17 @@ export async function renderPricePressure(slug?: string): Promise<string> {
         const eggs = await fetchData("uk.eggs.pressure");
         const signals = [eggs].filter(Boolean) as ProviderOutput[];
 
-        const listHtml = signals.map(s => `
-            <a href="/price-pressure/eggs/" class="card" style="text-decoration:none; color:inherit; display:block;">
-                <h3>${s.title}</h3>
-                <div class="signal-value ${s.status === 'rising' ? 'trend-up' : 'trend-flat'}">${s.status.toUpperCase()}</div>
-                <div class="meta">Updated: ${new Date(s.last_checked_utc).toLocaleDateString()}</div>
-            </a>
-        `).join("");
+        const listHtml = signals.map(s => {
+            const displayDate = formatDate(s.last_official_update || s.fetched_at_utc);
+            const statusStr = (s.status as string);
+            return `
+                <a href="/price-pressure/eggs/" class="card" style="text-decoration:none; color:inherit; display:block;">
+                    <h3>${s.title}</h3>
+                    <div class="signal-value ${statusStr === 'rising' ? 'trend-up' : 'trend-flat'}">${statusStr.toUpperCase()}</div>
+                    <div class="meta">Updated: ${displayDate}</div>
+                </a>
+            `;
+        }).join("");
 
         return renderLayout("Price Pressure Hub", `
             <div class="signal-grid">
@@ -35,7 +52,14 @@ export async function renderPricePressure(slug?: string): Promise<string> {
         if (!data) return renderLayout("Not Found", "<p>Data unavailable.</p>");
 
         const signal = data.signal as any;
-        const trend = data.status === 'rising' ? 'High / Rising' : 'Stable';
+        const statusStr = (data.status as string);
+        const trend = statusStr === 'rising' ? 'High / Rising' : 'Stable';
+
+        const sourceUrl = data.source_url;
+        const isLink = sourceUrl && (sourceUrl.startsWith("http://") || sourceUrl.startsWith("https://"));
+        const sourceHtml = isLink
+            ? `<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceUrl}</a>`
+            : (sourceUrl || "Unknown");
 
         const content = `
             <div class="card">
@@ -43,7 +67,7 @@ export async function renderPricePressure(slug?: string): Promise<string> {
                 <div class="signal-value ${data.status === 'rising' ? 'trend-up' : 'trend-flat'}">${trend}</div>
                 <p><strong>YoY Increase:</strong> ${signal?.yoy_percent || '--'}%</p>
                 <p><strong>Current Price:</strong> £${signal?.price || '--'} (${signal?.unit || ''})</p>
-                <div class="meta">Source: ${data.source.name}</div>
+                <div class="meta">Source: ${sourceHtml}</div>
             </div>
             
             <div style="margin-top:20px;">
