@@ -4,6 +4,7 @@ import * as path from "path";
 
 /**
  * Export site: Copy public/ → dist/
+ * Excludes _debug folder to prevent debug artifacts bloat
  */
 
 function rmrf(p: string) {
@@ -51,6 +52,13 @@ function copyDir(src: string, dest: string) {
     for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
         const s = path.join(src, entry.name);
         const d = path.join(dest, entry.name);
+
+        // Skip _debug folder to prevent debug artifacts from bloating deployments
+        if (entry.isDirectory() && entry.name === "_debug") {
+            console.log(`  ⏭️  Skipping ${s.replace(process.cwd(), ".")} (debug artifacts)`);
+            continue;
+        }
+
         if (entry.isDirectory()) {
             copyDir(s, d);
         } else {

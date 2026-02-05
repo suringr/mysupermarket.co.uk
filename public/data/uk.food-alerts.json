@@ -1,14 +1,11 @@
 {
-  "id": "uk.food-alerts",
-  "title": "UK Food Alerts",
-  "type": "alerts",
-  "source": {
-    "name": "Food Standards Agency",
-    "url": "https://data.food.gov.uk/food-alerts/id/rss/recent"
-  },
+  "provider_id": "uk.food-alerts",
+  "title": "Food Alerts",
+  "type": "price-pressure",
+  "source_url": "",
+  "status": "unavailable",
+  "fetched_at_utc": "2026-02-05T18:26:26.912Z",
   "region": "uk",
-  "status": "unknown",
-  "confidence": "low",
-  "last_checked_utc": "2026-02-04T21:33:35.907Z",
-  "reason": "Fetch failed (406)"
+  "reason": "Provider failed and no LKG data available: Fetch failed (406)",
+  "failure_type": "unavailable"
 }

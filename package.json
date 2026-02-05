@@ -6,8 +6,9 @@
     "clean": "rm -rf dist",
     "refresh:data": "ts-node scripts/refresh-data.ts",
     "build:client": "esbuild src/client/app.ts --bundle --outfile=public/assets/app.js --minify --sourcemap",
-    "build": "npm run build:client && npm run export:site",
+    "generate:routes": "ts-node scripts/generate-route-pages.ts",
     "export:site": "ts-node scripts/export-site.ts",
+    "build": "npm run build:client && npm run generate:routes && npm run export:site",
     "start": "npx serve dist -s"
   },
   "keywords": [

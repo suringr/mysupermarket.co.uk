@@ -45,29 +45,38 @@ export interface GenericSignal {
     [key: string]: any;
 }
 
+export type ProviderType = "price-pressure" | "inflation-trends" | "alerts-recalls";
+
+/**
+ * Provider output aligned with NextReset data model
+ */
 export interface ProviderOutput {
-    id: string;
+    // Core fields (must-have, NextReset-aligned)
+    provider_id: string;
     title: string;
-    type: string;
+    type: ProviderType;
+    source_url: string;
+    status: "fresh" | "stale" | "unavailable";
+    fetched_at_utc: string; // ISO timestamp - current run
+
+    // MySupermarket-specific fields
     region: "uk";
-    status: string; // "rising" | "stable" | "easing" | "alert" | "safe"
-    confidence: Confidence;
-    last_checked_utc: string; // ISO
-    source: ProviderSource;
+
+    // Optional fields
+    confidence?: Confidence;
+    reason?: string;  // Only on stale/unavailable
+    failure_type?: FailureType;
+    fetch_mode?: "http" | "browser";
 
     // Domain Specific Signals
     signal?: PricePressureSignal | InflationSignal | GenericSignal;
     items?: any[]; // For lists like alerts
     last_official_update?: string; // Date of official data
-
-    // Failure / Fallback
-    reason?: string;
-    fetch_mode?: "http" | "browser";
 }
 
 export interface ProviderMetadata {
-    id: string;
+    provider_id: string;
     title: string;
-    type: string;
-    source: ProviderSource;
+    type: ProviderType;
+    source_url: string;
 }
