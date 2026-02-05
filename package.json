@@ -1,0 +1,32 @@
+{
+  "name": "mysupermarket",
+  "version": "1.0.0",
+  "description": "Static reference site for UK supermarket trends",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "refresh:data": "ts-node scripts/refresh-data.ts",
+    "build:client": "esbuild src/client/app.ts --bundle --outfile=public/assets/app.js --minify --sourcemap",
+    "generate:routes": "ts-node scripts/generate-route-pages.ts",
+    "export:site": "ts-node scripts/export-site.ts",
+    "build": "npm run build:client && npm run generate:routes && npm run export:site",
+    "build:site": "npm run build && (npm run refresh:data || true) && npm run export:site",
+    "start": "npx serve dist -s"
+  },
+  "keywords": [
+    "supermarket",
+    "inflation",
+    "prices",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "esbuild": "^0.27.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
