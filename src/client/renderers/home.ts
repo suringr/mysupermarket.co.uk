@@ -6,7 +6,7 @@ export async function renderHome(): Promise<string> {
     // Parallel fetch for speed
     const [inflation, alerts] = await Promise.all([
         fetchData("uk.food-inflation"),
-        fetchData("uk.food-alerts")
+        fetchData("alerts")
     ]);
 
     // We also want "Price Pressure" examples. 
@@ -50,9 +50,9 @@ export async function renderHome(): Promise<string> {
         <!-- Card 3: Alerts -->
         <a href="/alerts" class="card ${alertCount > 0 ? 'border-left-bad' : 'border-left-good'}">
             <h3>Safety Alerts</h3>
-            <div class="signal-value">${alertCount} Active</div>
+            <div class="signal-value" style="font-size: 1.5rem;">${alertCount} Notices</div>
             <div class="meta">Recalls & Allergy Warnings</div>
-            <div class="action-link">View Alerts &rarr;</div>
+            <div class="action-link">Latest Updates &rarr;</div>
         </a>
     </div>
     `;

@@ -72,6 +72,7 @@ export interface ProviderOutput {
     signal?: PricePressureSignal | InflationSignal | GenericSignal;
     items?: any[]; // For lists like alerts
     last_official_update?: string; // Date of official data
+    count?: number; // Number of items in list
 }
 
 export interface ProviderMetadata {

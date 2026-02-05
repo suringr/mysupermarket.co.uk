@@ -1,0 +1,952 @@
+{
+  "provider_id": "alerts",
+  "title": "Safety Alerts",
+  "type": "alerts-recalls",
+  "source_url": "https://data.food.gov.uk/food-alerts/id.json?_limit=50&_sort=-modified",
+  "region": "uk",
+  "status": "fresh",
+  "confidence": "high",
+  "fetched_at_utc": "2026-02-05T20:15:04.698Z",
+  "last_official_update": "2026-02-04T15:28:20.673Z",
+  "items": [
+    {
+      "id": "FSA-AA-12-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Aytac Foods Distribution Limited recalls Darna Tahini because of undeclared peanuts",
+      "created": "2026-02-04",
+      "modified": "2026-02-04T15:28:20.673Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-12-2026",
+      "business": "Aytac Foods Distribution Limited",
+      "products": [
+        "Darna Tahini 100% Ground Sesame Paste"
+      ],
+      "allergens": [
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts\nThis product may contain peanuts making it a possible health risk for anyone with an allergy to peanuts."
+    },
+    {
+      "id": "FSA-PRIN-02-2026-update-3",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Update 3: Nestlé recalls several SMA Infant Formula and Follow-On Formula because of the presence of cereulide (toxin)",
+      "created": "2026-02-04",
+      "modified": "2026-02-04T13:31:11.648Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-02-2026-update-3",
+      "business": "Update 3: Nestlé",
+      "products": [
+        "SMA Advanced First Infant Milk",
+        "SMA Advanced Follow-On Milk",
+        "SMA Anti Reflux",
+        "SMA ALFAMINO",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA LITTLE STEPS First Infant Milk",
+        "SMA Comfort",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA Lactose Free"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of cereulide (toxin) in the products listed above.\nCereulide is a toxin produced by some strains of Bacillus cereus. Cereulide is highly heat stable meaning it is unlikely to be deactivated or destroyed by cooking, using boiling water or when making the infant milk. If consumed it can lead to rapid onset of symptoms.\nSymptoms caused by this toxin include nausea, vomiting and abdominal cramps.\nEven if you have not identified ill-health in your baby as a result of consumption of this product, it is essential to stop using it. If the infant formula or follow-on formula was prescribed by a health professional for your infant, consult a pharmacist or other medical professional before changing formula."
+    },
+    {
+      "id": "FSA-PRIN-02-2026-update-2",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Update 2: Nestlé recalls several SMA Infant Formula and Follow-On Formula because of the presence of cereulide (toxin)",
+      "created": "2026-02-03",
+      "modified": "2026-02-03T20:25:21.087Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-02-2026-update-2",
+      "business": "Update 2: Nestlé",
+      "products": [
+        "SMA Advanced First Infant Milk",
+        "SMA Advanced Follow-On Milk",
+        "SMA Anti Reflux",
+        "SMA ALFAMINO",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA LITTLE STEPS First Infant Milk",
+        "SMA Comfort",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA Lactose Free"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of cereulide (toxin) in the products listed above.\nCereulide is a toxin produced by some strains of Bacillus cereus. Cereulide is highly heat stable meaning it is unlikely to be deactivated or destroyed by cooking, using boiling water or when making the infant milk. If consumed it can lead to rapid onset of symptoms.\nSymptoms caused by this toxin include nausea, vomiting and abdominal cramps.\nEven if you have not identified ill-health in your baby as a result of consumption of this product, it is essential to stop using it. If the infant formula or follow-on formula was prescribed by a health professional for your infant, consult a pharmacist or other medical professional before changing formula."
+    },
+    {
+      "id": "FSA-AA-11-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "THIS™ recalls THIS™ Isn’t Chicken Deli Pieces because of undeclared soya and wheat (gluten)",
+      "created": "2026-01-28",
+      "modified": "2026-01-28T18:33:34.091Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-11-2026",
+      "business": "THIS™",
+      "products": [
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces",
+        "THIS™ Isn’t Chicken Deli Pieces"
+      ],
+      "allergens": [
+        "Gluten",
+        "Soya",
+        "Wheat"
+      ],
+      "risk_statement": "Soya and Wheat (gluten)\nThis product contains undeclared soya and wheat (gluten) making it a possible health risk for anyone with an allergy to soya and/or an allergy or intolerance to wheat or gluten or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-10-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Cottage Delight recalls Garlic Stuffed Gordal Olives because of undeclared almonds (nuts)",
+      "created": "2026-01-28",
+      "modified": "2026-01-28T15:54:05.066Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-10-2026",
+      "business": "Cottage Delight",
+      "products": [
+        "Cottage Delight Garlic Stuffed Gordal Olives"
+      ],
+      "allergens": [
+        "Almond",
+        "Nuts"
+      ],
+      "risk_statement": "Almonds (nuts)\nThis product may contain almonds making it a possible health risk for anyone with an allergy to almonds (nuts)."
+    },
+    {
+      "id": "FSA-AA-09-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Lidl GB recalls Red Hen Gastro 2 Southern Fried Chicken Thigh Burgers because celery is not emphasised on the label",
+      "created": "2026-01-27",
+      "modified": "2026-01-27T18:12:31.179Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-09-2026",
+      "business": "Lidl GB",
+      "products": [
+        "Red Hen Gastro 2 Southern Fried Chicken Thigh Burgers"
+      ],
+      "allergens": [
+        "Celery"
+      ],
+      "risk_statement": "Celery\nThis product contains celery making it a possible health risk for anyone with an allergy to celery."
+    },
+    {
+      "id": "FSA-PRIN-04-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Lidl GB recalls Snaktastic Multigrain Bites Sour Cream & Black Pepper because of the possible presence of foil",
+      "created": "2026-01-26",
+      "modified": "2026-01-26T19:18:56.734Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-04-2026",
+      "business": "Lidl GB",
+      "products": [
+        "Snaktastic Multigrain Bites Sour Cream & Black Pepper"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of foil which makes it a possible choking hazard and unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-08-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Tesco recalls Tesco Special Fried Rice because of undeclared wheat (gluten)",
+      "created": "2026-01-26",
+      "modified": "2026-01-26T14:32:28.971Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-08-2026",
+      "business": "Tesco",
+      "products": [
+        "Tesco Special Fried Rice"
+      ],
+      "allergens": [
+        "Gluten",
+        "Wheat"
+      ],
+      "risk_statement": "Wheat (gluten)\nThis product contains wheat making it a possible health risk for anyone with an allergy or intolerance to wheat or gluten or coeliac disease."
+    },
+    {
+      "id": "FSA-PRIN-03-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Danone recalls Aptamil First Infant Formula because cereulide (toxin) has been found in this batch",
+      "created": "2026-01-23",
+      "modified": "2026-01-24T12:19:34.99Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-03-2026",
+      "business": "Danone",
+      "products": [
+        "Aptamil First Infant Formula"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of cereulide (toxin) makes this product unsafe to consume.\nCereulide is a toxin produced by some strains of Bacillus cereus. Cereulide is highly heat stable meaning it is unlikely to be deactivated or destroyed by cooking, or when making the infant milk according to NHS guidelines. If consumed it can lead to rapid onset of symptoms.\nSymptoms caused by this toxin include nausea, vomiting and abdominal cramps."
+    },
+    {
+      "id": "FSA-AA-07-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Ten Acre Gifts/Coffee Syrup Collection recall",
+      "created": "2026-01-23",
+      "modified": "2026-01-23T09:27:05.588Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-07-2026",
+      "business": "TJX Europe",
+      "products": [
+        "Sugar Free Coffee Syrup Collection - French Vanilla, Salted Caramel, Hazelnut, and Cinnamon Dolce"
+      ],
+      "allergens": [
+        "Gluten",
+        "Nuts",
+        "Peanuts",
+        "Soya",
+        "Wheat"
+      ],
+      "risk_statement": "Nuts, Peanuts, Soya, and Wheat (gluten)\nThis product may contain nuts, peanuts, soya and wheat (gluten) making it a possible health risk for anyone with an allergy to nuts, peanuts, soya, and/or an allergy or intolerance to wheat or gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-06-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Praveen Kumar Vegetable Korma recalled - undeclared nuts",
+      "created": "2026-01-19",
+      "modified": "2026-01-19T19:25:02.957Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-06-2026",
+      "business": "Swarna Spice Ltd",
+      "products": [
+        "Praveen Kumar Vegetable Korma"
+      ],
+      "allergens": [
+        "Almond",
+        "Cashew",
+        "Nuts",
+        "Pistachio nut"
+      ],
+      "risk_statement": "Nuts (almond, cashew, pistachio)\nThis product contains nuts (almond, cashew and pistachio) making it a possible health risk for anyone with an allergy to nuts."
+    },
+    {
+      "id": "FSA-AA-05-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Kestrel Foods recalls Forest Feast Chocolate Jumbo Raisins",
+      "created": "2026-01-16",
+      "modified": "2026-01-16T19:31:45.012Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-05-2026",
+      "business": "Kestrel Foods",
+      "products": [
+        "Name: Belgian Milk Chocolate Raisins"
+      ],
+      "allergens": [
+        "Nuts",
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts, Nuts\nThis product may contain peanuts and nuts making it a possible health risk for anyone with an allergy to peanuts or nuts."
+    },
+    {
+      "id": "FSA-FAFA-02-2025-update-1",
+      "type": "FAFA",
+      "status": "Published",
+      "title": "Food Alert For Action: Jolly Rancher products Update 1",
+      "created": "2026-01-16",
+      "modified": "2026-01-16T12:31:02.299Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-fafa-02-2025-update-1",
+      "business": "Food businesses selling these products in the UK are advised to immediately stop sales, undertake product withdrawals and, where there have been retail sales, to undertake product",
+      "products": [
+        "Jolly Rancher Hard Candy (all flavours)",
+        "Jolly Rancher ‘Misfits’ Gummies (all flavours)",
+        "Jolly Rancher Hard Candy Fruity 2 in 1 (all flavours)",
+        "Jolly Rancher Berry Gummies (Berry flavour)",
+        "Jolly Rancher Filled Pops (all flavours)",
+        "Jolly Rancher Freeze Dried Candy (all flavours)"
+      ],
+      "allergens": [],
+      "risk_statement": "Although the levels consumers are exposed to are likely to be low, they may present a risk to health because they contain MOAH. Consumption of the affected sweets is of toxicological concern, especially in younger age groups and where consumers eat a lot of the products or eat it regularly.\nMOAH can cause damage to DNA and has the potential to increase the risk of cancer, particularly if consumed in high quantities over a prolonged period of time. MOAH is a genotoxic carcinogen, therefore no exposure is without risk to human health."
+    },
+    {
+      "id": "FSA-AA-3-2026-update-1",
+      "type": "AA",
+      "status": "Published",
+      "title": "Update 1: PUREPOWER Nutrition recalls Chicken & Chorizo Paella and Chicken Chow Mein because of undeclared milk",
+      "created": "2026-01-09",
+      "modified": "2026-01-13T14:31:01.653Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-3-2026-update-1",
+      "business": "PUREPOWER Nutrition",
+      "products": [
+        "Chicken & Chorizo Paella ",
+        "Chicken Chow Mein"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThe Chicken & Chorizo Paella product contains milk, making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents. The Chicken Chow Mein has been mispacked with Chicken and Chorizo Paella."
+    },
+    {
+      "id": "FSA-AA-3-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "PUREPOWER Nutrition recalls Chicken & Chorizo Paella and Chicken Chow Mein because of undeclared milk",
+      "created": "2026-01-09",
+      "modified": "2026-01-12T18:00:04.092Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-3-2026",
+      "business": "PUREPOWER Nutrition",
+      "products": [
+        "Chicken & Chorizo Paella",
+        "Chicken Chow Mein"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "These products have been mispacked. The Chicken & Chorizo Paella product has been mispacked with Chicken Chow Mein which contains milk, making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-02-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Sainsbury’s recalls By Sainsbury’s Slow Cooked Lamb Shoulder with Redcurrant Honey & Rosemary Glaze because of undeclared milk",
+      "created": "2026-01-09",
+      "modified": "2026-01-10T12:09:41.865Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-02-2026",
+      "business": "Sainsbury’s",
+      "products": [
+        "name: By Sainsbury’s Slow Cooked Lamb Shoulder with Redcurrant Honey & Rosemary Glaze"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "This product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-04-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Dunnes Stores recalls Moroccan Style Topped Houmous because of undeclared egg and milk",
+      "created": "2026-01-09",
+      "modified": "2026-01-09T19:14:11.279Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-04-2026",
+      "business": "Dunnes Stores",
+      "products": [
+        "name: Moroccan Style Topped Houmous"
+      ],
+      "allergens": [
+        "Egg",
+        "Milk"
+      ],
+      "risk_statement": "This product contains egg and milk making it a possible health risk for anyone with an allergy or intolerance to egg, milk or milk constituents."
+    },
+    {
+      "id": "FSA-PRIN-02-2026-update-1",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Update 1 - Nestlé recalls several SMA Infant Formula and Follow-On Formula as a precaution because of the possible presence of cereulide (toxin)",
+      "created": "2026-01-07",
+      "modified": "2026-01-09T13:37:23.99Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-02-2026-update-1",
+      "business": "Nestlé",
+      "products": [
+        "SMA Advanced First Infant Milk",
+        "SMA Advanced Follow-On Milk",
+        "SMA Anti Reflux",
+        "SMA ALFAMINO",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA LITTLE STEPS First Infant Milk",
+        "SMA Comfort",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA Lactose Free"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of cereulide (toxin) makes these products unsafe to consume.\nCereulide is a toxin produced by some strains of Bacillus cereus. Cereulide is highly heat stable meaning it is unlikely to be deactivated or destroyed by cooking, using boiling water or when making the infant milk. If consumed it can lead to rapid onset of symptoms.\nSymptoms caused by this toxin include nausea, vomiting and abdominal cramps.\nEven if you have not identified ill-health in your baby as a result of consumption of this product, it is essential to stop using it. If the infant formula or follow-on formula was prescribed by a health professional for your infant, consult a pharmacist or other medical professional before changing formula."
+    },
+    {
+      "id": "FSA-AA-01-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Lidl GB recalls Deluxe Red Cabbage with Apple, Dried Cranberries & Spices because milk is not emphasised on the label",
+      "created": "2026-01-06",
+      "modified": "2026-01-06T17:10:00.814Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-01-2026",
+      "business": "Lidl GB",
+      "products": [
+        "name: Deluxe Red Cabbage with Apple, Dried Cranberries & Spices,"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-PRIN-02-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Nestlé recalls several SMA Infant and Follow-On Formula",
+      "created": "2026-01-05",
+      "modified": "2026-01-06T11:55:40.248Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-02-2026",
+      "business": "Nestlé",
+      "products": [
+        "SMA Advanced First Infant Milk",
+        "SMA Advanced Follow-On Milk",
+        "SMA Anti Reflux",
+        "SMA ALFAMINO",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA LITTLE STEPS First Infant Milk",
+        "SMA Comfort",
+        "SMA First Infant Milk",
+        "SMA First Infant Milk",
+        "SMA Lactose Free"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of cereulide (toxin) makes these products unsafe to consume.\n\nCereulide is a toxin produced by some strains of Bacillus cereus. Cereulide is highly heat stable meaning it is unlikely to be deactivated or destroyed by cooking, using boiling water or when making the infant milk. If consumed it can lead to rapid onset of symptoms. Symptoms caused by this toxin include nausea, vomiting and abdominal cramps.\n\nEven if you have not identified ill-health in your baby as a result of consumption of this product, it is essential to stop using it. If the infant formula or follow-on formula was prescribed by a health professional for your infant, consult a pharmacist or other medical professional before changing formula."
+    },
+    {
+      "id": "FSA-PRIN-01-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Tesco Pates recalled because of incorrect use-by dates",
+      "created": "2026-01-03",
+      "modified": "2026-01-03T12:07:21.011Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-01-2026",
+      "business": "Tesco",
+      "products": [
+        "Tesco Coarse Farmhouse Pate",
+        "Tesco Coarse Ardennes Pate",
+        "Tesco Smooth Chicken Liver Pate"
+      ],
+      "allergens": [],
+      "risk_statement": "The products listed above have been labelled with an incorrect ‘use-by’ date printed on the pack. The products may pose a microbiological risk, making them unsafe to eat."
+    },
+    {
+      "id": "FSA-PRIN-55-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Waitrose recalls Waitrose No1 Deeside Mineral Waters",
+      "created": "2025-12-30",
+      "modified": "2025-12-30T19:16:42.688Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-55-2025",
+      "business": "Waitrose",
+      "products": [
+        "Waitrose No1 Deeside Mineral Water",
+        "Waitrose No1 Deeside Sparkling Water"
+      ],
+      "allergens": [],
+      "risk_statement": "The product may contain glass which may cause injury and makes it unsafe to drink."
+    },
+    {
+      "id": "FSA-PRIN-54-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "London Wholesalers recalls BOSS Sugar Free Persian Pistachio",
+      "created": "2025-12-24",
+      "modified": "2025-12-24T18:10:41.145Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-54-2025",
+      "business": "London Wholesalers Ltd",
+      "products": [
+        "BOSS Sugar Free Persian Pistachio Nougat"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Salmonella in the above product.\n \nSymptoms caused by Salmonella usually include fever, diarrhoea, and abdominal cramps. If you are experiencing these symptoms, you should stay away from work, school, or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others. "
+    },
+    {
+      "id": "FSA-AA-85-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "The Bakewell Bakery recalls Shallow Brandy Mince Pies because of undeclared milk",
+      "created": "2025-12-23",
+      "modified": "2025-12-23T17:05:41.971Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-85-2025",
+      "business": "The Bakewell Bakery",
+      "products": [
+        "Shallow Brandy Mince Pies"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "The product contains milk making them a health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-84-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Tesco recalls Tesco Free From 4 Christmas Chocolate Flavoured Cupcakes because they may contain milk",
+      "created": "2025-12-22",
+      "modified": "2025-12-23T08:43:46.017Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-84-2025",
+      "business": "Tesco",
+      "products": [
+        "Tesco Free From 4 Christmas Chocolate Flavoured Cupcakes"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "The product may contain milk making them a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-83-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Keenan Seafood recalls various prepacked fish products",
+      "created": "2025-12-19",
+      "modified": "2025-12-19T16:44:56.454Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-83-2025",
+      "business": "Keenan Seafood",
+      "products": [
+        "Keenan Seafood Fish Pie Bake",
+        "Keenan Seafood Premium Salt and Chilli Battered Prawns",
+        "Keenan Seafood Sea Bass with Chilli Lime and Ginger",
+        "Keenan Seafood Cod Fillets",
+        "Keenan Seafood Smoked Cod Fillets",
+        "Keenan Seafood Haddock Fillets",
+        "Keenan Seafood Smoked Haddock",
+        "Keenan Seafood Smoked Coley",
+        "Keenan Seafood Salmon Fillet",
+        "Keenan Seafood Cod Cheeks with Chilli Lime & Ginger",
+        "Keenan Seafood Keenan Seafood Piri Piri Coley",
+        "Keenan Seafood Haddock with Lemon & Garlic",
+        "Keenan Seafood Battered Salt & Chilli Prawns",
+        "Keenan Seafood Smoked Cod Fillet",
+        "Keenan Seafood Cod with Chilli, Lime & Ginger",
+        "Keenan Seafood Katsu Curry Prawns",
+        "Keenan Seafood Haddock Fillet with Garlic & Herb",
+        "Keenan Seafood Salmon with Salt & Chilli",
+        "Keenan Seafood Hake Goujons",
+        "Keenan Seafood Battered Fish Goujons",
+        "Keenan Seafood Battered Fish Bites",
+        "Keenan Seafood Cranberry & Orange Fish Bites"
+      ],
+      "allergens": [
+        "Barley",
+        "Crustaceans",
+        "Egg",
+        "Fish",
+        "Gluten",
+        "Milk",
+        "Mustard",
+        "Soya",
+        "Wheat"
+      ],
+      "risk_statement": "Barley (Gluten), Crustaceans, Egg, Fish, Milk, Mustard, Soya, Wheat (Gluten)\nThese products contain barley (gluten), crustaceans, egg, fish, milk, mustard, soya and wheat (gluten) which are not mentioned on the label. This means the products are a possible health risk for anyone with an allergy to crustaceans, fish, mustard, soya, an allergy or intolerance to egg, milk or milk constituents, cereals containing gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-82-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Young’s Gastro 2 Lemon & Pepper Fish (undeclared mustard)",
+      "created": "2025-12-19",
+      "modified": "2025-12-19T16:21:14.134Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-82-2025",
+      "business": "Young’s Seafood",
+      "products": [
+        "Young’s Gastro 2 Lemon & Pepper Fish Fillets"
+      ],
+      "allergens": [
+        "Mustard"
+      ],
+      "risk_statement": "Mustard\nThis product contains mustard making it a possible health risk for anyone with an allergy to mustard. "
+    },
+    {
+      "id": "FSA-AA-81-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Brookie Bakes recalls Brookie Bakes Dubai Bar Pistachio & Knafeh because of undeclared peanuts",
+      "created": "2025-12-18",
+      "modified": "2025-12-18T20:14:19.955Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-81-2025",
+      "business": "Brookie Bakes",
+      "products": [
+        "Brookie Bakes Dubai Bar Pistachio & Knafeh"
+      ],
+      "allergens": [
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts\nThis product may contain peanuts making it a possible health risk for anyone with an allergy to peanuts."
+    },
+    {
+      "id": "FSA-AA-80-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Aldi recalls Perfect Christmas Mozzarella Sticks in Blankets",
+      "created": "2025-12-12",
+      "modified": "2025-12-12T17:13:20.923Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-80-2025",
+      "business": "Aldi",
+      "products": [
+        "Perfect Christmas Mozzarella Sticks in Blankets"
+      ],
+      "allergens": [
+        "Egg"
+      ],
+      "risk_statement": "Egg\nThis product contains egg making it a possible health risk for anyone with an allergy or intolerance to egg."
+    },
+    {
+      "id": "FSA-AA-79-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Vault City Brewing recalls Mince Pie Pastry Sour (Beer) because of undeclared milk",
+      "created": "2025-12-11",
+      "modified": "2025-12-12T13:11:38.307Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-79-2025",
+      "business": "Vault City Brewing",
+      "products": [
+        "Mince Pie Pastry Sour (Beer)"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-78-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Grape Tree recalls Easy Melt Couverture Dark Chocolate 55% because of undeclared milk",
+      "created": "2025-12-10",
+      "modified": "2025-12-10T11:32:20.392Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-78-2025",
+      "business": "Grape Tree",
+      "products": [
+        "Easy Melt Couverture Dark Chocolate 55%"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-77-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Grape Tree recalls Caramel Flavour Coated Raisins because of undeclared peanuts",
+      "created": "2025-12-09",
+      "modified": "2025-12-09T20:00:36.228Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-77-2025",
+      "business": "Grape Tree",
+      "products": [
+        "Caramel Flavour Coated Raisins"
+      ],
+      "allergens": [
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts\nThis product contains peanuts making it a possible health risk for anyone with an allergy to peanuts."
+    },
+    {
+      "id": "FSA-PRIN-53-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Illva Saronno S.p.A recalls Disaronno Originale because of the possible presence of glass",
+      "created": "2025-12-09",
+      "modified": "2025-12-09T19:54:07.355Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-53-2025",
+      "business": "Illva Saronno S.p.A",
+      "products": [
+        "Disaronno Originale"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain glass which makes it unsafe to drink."
+    },
+    {
+      "id": "FSA-AA-76-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Tesco 6 Aubergine Katsu Bao Buns (undeclared milk)",
+      "created": "2025-12-08",
+      "modified": "2025-12-08T18:07:24.753Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-76-2025",
+      "business": "Tesco",
+      "products": [
+        "Tesco 6 Aubergine Katsu Bao Buns"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-75-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Calbee Group UK Ltd recalls Calbee Hot & Spicy Chips and Calbee Pizza Chips because of undeclared mustard and celery",
+      "created": "2025-12-04",
+      "modified": "2025-12-04T16:38:32.681Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-75-2025",
+      "business": "Calbee Group UK Ltd",
+      "products": [
+        "Calbee Hot & Spicy Chips",
+        "Calbee Hot & Spicy Chips",
+        "Calbee Pizza Chips"
+      ],
+      "allergens": [
+        "Celery",
+        "Mustard"
+      ],
+      "risk_statement": "Mustard and celery\nThe Calbee Hot & Spicy Chips contain contain mustard and the Calbee Pizza Chips contain celery making them a possible health risk for anyone with an allergy to mustard or celery."
+    },
+    {
+      "id": "FSA-AA-74-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Dairyfine Salted Caramel Filled Gonks (peanuts)",
+      "created": "2025-11-28",
+      "modified": "2025-12-01T10:56:41.441Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-74-2025",
+      "business": "Aldi",
+      "products": [
+        "Dairyfine Salted Caramel Filled Gonks"
+      ],
+      "allergens": [
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts\nThis product may contain peanuts making it a possible health risk for anyone with an allergy to peanuts."
+    },
+    {
+      "id": "FSA-PRIN-52-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Asda recalls Asda 10 Mini Duck Spring Rolls with Hoisin Dip because of incorrect use by date",
+      "created": "2025-11-27",
+      "modified": "2025-11-27T12:23:52.36Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-52-2025",
+      "business": "Asda",
+      "products": [
+        "Asda 10 Mini Duck Spring Rolls with Hoisin Dip"
+      ],
+      "allergens": [],
+      "risk_statement": "The product listed above has been labelled with an incorrect use by date of 29 December 2025 which makes them unsafe to consume after the correct use by date of 29 November 2025."
+    },
+    {
+      "id": "FSA-AA-73-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Dimark Limited recalls Veira Dream Pistachio Chocolate",
+      "created": "2025-11-25",
+      "modified": "2025-11-25T18:50:13.038Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-73-2025",
+      "business": "Dimark Limited",
+      "products": [
+        "Veira Dream of Angel Hair Pistachio Chocolate"
+      ],
+      "allergens": [
+        "Peanuts",
+        "Sesame"
+      ],
+      "risk_statement": "Peanut and Sesame\nThis product contains peanuts and sesame making it a possible health risk for anyone with an allergy to peanuts and/or an allergy to sesame."
+    },
+    {
+      "id": "FSA-AA-72-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Tesco recalls Celery, Fruit and Nut Salad due to mustard",
+      "created": "2025-11-24",
+      "modified": "2025-11-24T16:54:36.825Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-72-2025",
+      "business": "Tesco",
+      "products": [
+        "Tesco Celery, Fruit and Nut Salad"
+      ],
+      "allergens": [
+        "Mustard"
+      ],
+      "risk_statement": "Mustard\nThis product contains mustard making it a possible health risk for anyone with an allergy to mustard."
+    },
+    {
+      "id": "FSA-PRIN-51-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Dunnes Stores recalls Sage and Herbes de Provence",
+      "created": "2025-11-21",
+      "modified": "2025-11-21T14:44:49.044Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-51-2025",
+      "business": "Dunnes Stores",
+      "products": [
+        "Dunnes Stores Sage",
+        "Dunnes Stores Herbes de Provence"
+      ],
+      "allergens": [],
+      "risk_statement": "These products may contain pieces of blue plastic and large pieces of stalk and bark which present choking hazards and make them unsafe to eat.  "
+    },
+    {
+      "id": "FSA-PRIN-50-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Nutrilean recalls Chocolate Brownie Overnight Oats",
+      "created": "2025-11-21",
+      "modified": "2025-11-21T12:53:15.007Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-50-2025",
+      "business": "Nutrilean",
+      "products": [
+        "Nutrilean Chocolate Brownie Overnight Oats"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the product listed above.\nSymptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis.\nSome people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-AA-71-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Flapjackery recalls Mince Pie Crumble Flapjack",
+      "created": "2025-11-20",
+      "modified": "2025-11-20T19:39:17.777Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-71-2025",
+      "business": "Flapjackery",
+      "products": [
+        "Flapjackery Mince Pie Crumble Flapjack",
+        "Flapjackery Christmas Towers box",
+        "Flapjackery Rudolph box"
+      ],
+      "allergens": [
+        "Almond",
+        "Nuts"
+      ],
+      "risk_statement": "Almonds (nuts)\nThis product contains almonds making it a possible health risk for anyone with an allergy to almonds (nuts)."
+    },
+    {
+      "id": "FSA-AA-70-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Sainsbury’s recall JS Free From Breaded Mini Fillets because of undeclared milk",
+      "created": "2025-11-12",
+      "modified": "2025-11-12T19:16:18.643Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-70-2025",
+      "business": "Sainsbury’s",
+      "products": [
+        "JS Free From Breaded Mini Fillets"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-PRIN-49-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Poundland & Dealz recalls The Tasty Snack Co. Roasted and Salted Cashews because of the possible presence of glass",
+      "created": "2025-11-06",
+      "modified": "2025-11-06T15:19:08.336Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-49-2025",
+      "business": "Poundland & Dealz",
+      "products": [
+        "The Tasty Snack Co. Roasted and Salted Cashews"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of glass in the product which makes it unsafe to eat."
+    },
+    {
+      "id": "FSA-PRIN-48-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Lidl GB recalls Simply Roasted and Salted Cashews because of the possible presence of glass",
+      "created": "2025-11-05",
+      "modified": "2025-11-05T13:42:20.023Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-48-2025",
+      "business": "Lidl GB",
+      "products": [
+        "Simply Roasted and Salted Cashews"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of glass in the product which makes it unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-69-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "ALDI recalls Dairyfine Crispy Choc Um’s because it may contain peanuts",
+      "created": "2025-10-31",
+      "modified": "2025-10-31T16:43:06.861Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-69-2025",
+      "business": "ALDI",
+      "products": [
+        "Dairyfine Crispy Choc Um’s"
+      ],
+      "allergens": [
+        "Peanuts"
+      ],
+      "risk_statement": "Peanuts\nThis product may contain peanuts making it a possible health risk for anyone with an allergy to peanuts."
+    },
+    {
+      "id": "FSA-PRIN-47-2025",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Tofu King (UK) Ltd recalls Tofu King Paper Tofu because of contamination with Listeria monocytogenes",
+      "created": "2025-10-31",
+      "modified": "2025-10-31T15:29:33.701Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-47-2025",
+      "business": "Tofu King (UK) Ltd",
+      "products": [
+        "Tofu King Paper Tofu, 北佬干豆腐"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the above product.\nSymptoms caused by this organism can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis.\nSome people are more vulnerable to Listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-AA-68-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "TJ Morris Ltd recalls Milka Hazelnut, Milka Whole Nut and Milka Oreo Brownie chocolate bars because allergens are not declared in English on the label",
+      "created": "2025-10-30",
+      "modified": "2025-10-31T14:56:50.498Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-68-2025",
+      "business": "TJ Morris Ltd",
+      "products": [
+        "Milka Hazelnut",
+        "Milka Whole Nut",
+        "Milka Oreo Brownie"
+      ],
+      "allergens": [
+        "Gluten",
+        "Hazelnut",
+        "Milk",
+        "Nuts",
+        "Soya",
+        "Wheat"
+      ],
+      "risk_statement": "Milk, hazelnuts (nuts), soya and wheat (gluten)\nThis product contains milk, hazelnuts (nuts), soya and wheat (gluten) making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents, an allergy to hazelnuts, (nuts), and/or soya, and/or an allergy or intolerance to wheat or gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-67-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "THIS™ Isn’t Chicken Deli Pieces recall due to soya and wheat",
+      "created": "2025-10-30",
+      "modified": "2025-10-30T14:23:15.494Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-67-2025",
+      "business": "THISTM ",
+      "products": [
+        "THIS™ Isn’t Chicken Deli Pieces"
+      ],
+      "allergens": [
+        "Gluten",
+        "Soya",
+        "Wheat"
+      ],
+      "risk_statement": "Soya and Wheat (gluten)\nThis product contains undeclared soya and wheat (gluten) making it a possible health risk for anyone with an allergy to soya and/or an allergy or intolerance to wheat or gluten or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-66-2025",
+      "type": "AA",
+      "status": "Published",
+      "title": "Rose Manufacturing recalls Halloween Spooky Tea Cakes because of undeclared egg",
+      "created": "2025-10-29",
+      "modified": "2025-10-29T15:55:21.332Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-66-2025",
+      "business": "Rose Manufacturing",
+      "products": [
+        "Halloween Spooky Tea Cakes"
+      ],
+      "allergens": [
+        "Egg"
+      ],
+      "risk_statement": "Egg\nThis product contains egg making it a possible health risk for anyone with an allergy or intolerance to egg. "
+    }
+  ],
+  "count": 50
+}

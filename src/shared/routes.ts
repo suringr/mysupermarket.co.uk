@@ -5,7 +5,7 @@ export const HUB_ROUTES = [
     { path: "/", title: "Home" },
     { path: "/price-pressure/", title: "Price Pressure" },
     { path: "/inflation-trends/", title: "Inflation Trends" },
-    { path: "/alerts-recalls/", title: "Alerts & Recalls" },
+    { path: "/alerts/", title: "Safety Alerts" },
 ] as const;
 
 // Hub title lookup (safe, performant)

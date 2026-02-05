@@ -1,75 +1,118 @@
 
-import { XMLParser } from "fast-xml-parser";
 import { fetchHtml } from "../lib/fetch-layer";
-import { ProviderOutput, Confidence, ProviderMetadata } from "../lib/types";
+import { ProviderOutput, Confidence, ProviderMetadata, FailureType, ProviderType } from "../lib/types";
 
+// Canonical metadata
+// NOTE: provider_id is "alerts" to match requested output filename "alerts.json"
 const META: ProviderMetadata = {
-    provider_id: "uk.food-alerts",
-    title: "UK Food Alerts",
-    type: "alerts-recalls",
-    source_url: "https://data.food.gov.uk/food-alerts/id/rss/recent"
+    provider_id: "alerts",
+    title: "Safety Alerts",
+    type: "alerts-recalls" as ProviderType,
+    source_url: "https://data.food.gov.uk/food-alerts/id.json?_limit=50&_sort=-modified"
 };
 
-interface RSSItem {
+interface FSAPayload {
+    items: FSAItem[];
+    meta: any;
+}
+
+interface FSAItem {
+    notation: string; // id
     title: string;
-    link: string; // or guid
-    pubDate: string;
-    description: string;
-    guid: string;
+    shortTitle?: string;
+    type: string[]; // e.g. [.../def/AA]
+    status?: { label: string };
+    created: string;
+    modified: string;
+    alertURL: string;
+    reportingBusiness?: { commonName: string };
+    problem?: Array<{
+        riskStatement?: string;
+        allergen?: Array<{ label: string }>;
+        type?: string;
+    }>;
+    productDetails?: Array<{ productName: string }>;
 }
 
 export async function run(): Promise<ProviderOutput> {
+    const headers = {
+        "Accept": "application/json",
+        "User-Agent": "mysupermarket.co.uk (signals bot)"
+    };
+
+    // Use fetchHtml which handles retries and fetching. 
+    // We parse the text response as JSON.
     const response = await fetchHtml(META.source_url, {
         providerId: META.provider_id,
-        headers: {
-            "Accept": "application/rss+xml, application/xml, text/xml" // Explicitly ask for XML
-        }
+        headers: headers
     });
 
     if (!response.ok) {
         throw new Error(`Fetch failed (${response.status})`);
     }
 
-    const parser = new XMLParser({
-        ignoreAttributes: false,
-        attributeNamePrefix: "@_"
-    });
-    const feed = parser.parse(response.text);
-
-    // Handle different RSS structures (standard RSS 2.0 or Atom if FSA changes)
-    // Usually FSA is RSS 2.0: rss -> channel -> item[]
-    const items: RSSItem[] = feed?.rss?.channel?.item || feed?.feed?.entry || [];
-
-    if (!Array.isArray(items) || items.length === 0) {
-        throw new Error("No items found in RSS feed");
+    let payload: FSAPayload;
+    try {
+        payload = JSON.parse(response.text);
+    } catch (e) {
+        throw new Error("Failed to parse JSON response");
     }
 
-    // Transform items
-    const transformedItems = items.slice(0, 20).map((item) => {
-        // Normalize pubDate
-        const dateStr = item.pubDate || "";
-        let isoDate = "";
-        try {
-            isoDate = new Date(dateStr).toISOString();
-        } catch {
-            isoDate = new Date().toISOString(); // Fallback if invalid
-        }
+    const rawItems = payload.items || [];
+
+    // Strict Mapping
+    const items = rawItems.map(item => {
+        // Derive type tag
+        let type = "Alert";
+        const types = item.type || [];
+        if (types.some(t => t.endsWith("/def/AA"))) type = "AA";
+        else if (types.some(t => t.endsWith("/def/PRIN"))) type = "PRIN";
+        else if (types.some(t => t.endsWith("/def/FAFA"))) type = "FAFA";
+
+        // Flatten allergens
+        const allergens = new Set<string>();
+        item.problem?.forEach(p => {
+            p.allergen?.forEach(a => {
+                if (a.label) allergens.add(a.label);
+            });
+        });
+
+        // Flatten products
+        const products = (item.productDetails?.map(p => p.productName) || []).filter(Boolean);
 
         return {
-            title: item.title,
-            url: item.link || item.guid, // FSA uses link usually
-            date_utc: isoDate,
-            summary: item.description // Optional, might strip HTML later if needed
+            id: item.notation,
+            type: type,
+            status: item.status?.label || "Unknown",
+            title: item.shortTitle || item.title,
+            created: item.created,
+            modified: item.modified,
+            alert_url: item.alertURL,
+            business: item.reportingBusiness?.commonName,
+            products: products,
+            allergens: Array.from(allergens),
+            risk_statement: item.problem?.[0]?.riskStatement
         };
     });
+
+    // Last Official Update logic: max modified or created date
+    let lastUpdate = "";
+    if (items.length > 0) {
+        // Sort descent to find max
+        const dates = items.map(i => i.modified || i.created).filter(Boolean);
+        dates.sort().reverse();
+        if (dates.length > 0) lastUpdate = dates[0];
+    }
 
     const output: ProviderOutput = {
         ...META,
         region: "uk",
-        status: "fresh",  // Providers only return fresh
+        status: "fresh",
         confidence: Confidence.High,
         fetched_at_utc: new Date().toISOString(),
-        items: transformedItems
+        last_official_update: lastUpdate || new Date().toISOString(),
+        items: items,
+        count: items.length
     };
 
     return output;

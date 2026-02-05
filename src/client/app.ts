@@ -41,8 +41,9 @@ async function route() {
             if (hub === "price-pressure") {
                 html = await renderPricePressure();  // No slug = hub view
             } else if (hub === "inflation-trends") {
+            } else if (hub === "inflation-trends") {
                 html = await renderInflation();
-            } else if (hub === "alerts-recalls") {
+            } else if (hub === "alerts") {
                 html = await renderAlerts();
             } else {
                 html = await renderNotFound();
@@ -60,8 +61,9 @@ async function route() {
             if (!entityExists) {
                 html = await renderNotFound();  // Immediate 404 for invalid entities
             } else if (hub === "price-pressure") {
+            } else if (hub === "price-pressure") {
                 html = await renderPricePressure(slug);  // Pass slug to renderer
-            } else if (hub === "alerts-recalls") {
+            } else if (hub === "alerts") {
                 html = await renderAlerts(slug);
             } else {
                 // Hub exists but doesn't support detail pages yet
