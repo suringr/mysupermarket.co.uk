@@ -56,8 +56,11 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Refresh Data & Build Pages
-        run: npm run build:all
+      - name: Refresh Data
+        run: npm run refresh:data
+
+      - name: Build Pages (includes export)
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
