@@ -70,6 +70,15 @@ async function route() {
                 html = await renderNotFound();
             }
         }
+        // Pagination: /alerts/page/2/
+        else if (segments.length === 3) {
+            const [excludeAlerts, excludePage, pageNum] = segments;
+            if (excludeAlerts === "alerts" && excludePage === "page") {
+                html = await renderAlerts(pageNum);
+            } else {
+                html = await renderNotFound();
+            }
+        }
         else {
             html = await renderNotFound();
         }

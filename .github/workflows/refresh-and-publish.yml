@@ -3,12 +3,14 @@ name: Refresh and Publish
 on:
   pull_request:
     branches: [ main, init ]
+  push:
+    branches: [ main ]
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
 concurrency:
-  group: publish-dist
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'publish' }}
   cancel-in-progress: true
 
 permissions:
@@ -36,12 +38,14 @@ jobs:
         run: npm run build
 
   publish:
-    name: Build site + publish dist (schedule/manual)
+    name: Refresh data + build + publish dist
     if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -49,18 +53,19 @@ jobs:
           node-version: "20"
           cache: "npm"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
 
       - name: Refresh Data & Build Pages
         run: npm run build:all
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+          force_orphan: true
           commit_message: "Deploy: update data [skip ci]"
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
