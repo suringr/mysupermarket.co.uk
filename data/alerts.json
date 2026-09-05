@@ -1,0 +1,930 @@
+{
+  "provider_id": "alerts",
+  "title": "Safety Alerts",
+  "type": "alerts-recalls",
+  "source_url": "https://data.food.gov.uk/food-alerts/id.json?_limit=50&_sort=-modified",
+  "region": "uk",
+  "status": "fresh",
+  "confidence": "high",
+  "fetched_at_utc": "2026-09-05T20:02:24.714Z",
+  "last_official_update": "2026-09-04T18:39:45.509Z",
+  "items": [
+    {
+      "id": "FSA-PRIN-43-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Sainsbury’s recalls Inspired to Cook Pitted Black Olives    ",
+      "created": "2026-09-04",
+      "modified": "2026-09-04T18:39:45.509Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-43-2026",
+      "business": "Sainsbury’s",
+      "products": [
+        "Inspired to Cook by Sainsbury’s Pitted Black Olives"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the product listed above.\nSymptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis.    \n \nSome people are more vulnerable to Listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems.  "
+    },
+    {
+      "id": "FSA-AA-42-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Tesco recalls Tesco Finest Caesar & Smoked Bacon Coleslaw because of undeclared mustard",
+      "created": "2026-09-03",
+      "modified": "2026-09-03T16:11:41.515Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-42-2026",
+      "business": "Tesco",
+      "products": [
+        "Tesco Finest Caesar & Smoked Bacon Coleslaw"
+      ],
+      "allergens": [
+        "Mustard"
+      ],
+      "risk_statement": "Mustard\nThis product contains mustard making it a possible health risk for anyone with an allergy to mustard."
+    },
+    {
+      "id": "FSA-AA-41-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Waitrose & Partners recalls Waitrose Rhubarb Crumble because of undeclared oats (gluten)",
+      "created": "2026-09-03",
+      "modified": "2026-09-03T13:34:09.742Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-41-2026",
+      "business": "Waitrose & Partners",
+      "products": [
+        "Waitrose Rhubarb Crumble"
+      ],
+      "allergens": [
+        "Gluten",
+        "Oats"
+      ],
+      "risk_statement": "Oats (gluten)\nThis product contains gluten making it a possible health risk for anyone with an allergy or intolerance to oats or gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-PRIN-42-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Macroom Buffalo Cheese Products recalls Macroom Buffalo Cheese Mozzarella and Macroom Buffalo Cheese Bocconcini because of contamination with Listeria monocytogenes",
+      "created": "2026-08-28",
+      "modified": "2026-08-28T09:51:57.466Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-42-2026",
+      "business": "Macroom Buffalo Cheese Products",
+      "products": [
+        "Macroom Buffalo Cheese Mozzarella",
+        "Macroom Buffalo Cheese Bocconcini"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the products listed above. Symptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis. Some people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-PRIN-41-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Tesco recalls Tesco Finest Mozzarella Pearls & Pesto Salad",
+      "created": "2026-08-25",
+      "modified": "2026-08-25T17:30:42.667Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-41-2026",
+      "business": "Tesco",
+      "products": [
+        "Tesco Finest Mozzarella Pearls & Pesto Orzo Salad"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of Shiga toxin-producing E. coli STEC in the product listed above.\nSymptoms caused by STEC organisms include severe diarrhoea with or without blood in the stool, abdominal pain, vomiting, dehydration and sometimes haemolytic uremic syndrome, (HUS), a serious condition that can lead to kidney failure and can be fatal. \nIf you are experiencing these symptoms, you should stay away from work, school or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others."
+    },
+    {
+      "id": "FSA-PRIN-40-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Summit Foods is recalling various products ",
+      "created": "2026-08-21",
+      "modified": "2026-08-21T16:45:36.179Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-40-2026",
+      "business": "Summit Foods",
+      "products": [
+        "Snacksters Chicken Fajita Wrap",
+        "Snacksters Hoi Sin Wrap",
+        "East Street Deli Sweet Chilli Chicken Wrap",
+        "Target a Snack Chicken Fajita Wrap"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of Shiga toxin-producing E. coli (STEC) in the products listed above.\nSymptoms caused by STEC can include severe diarrhoea (including bloody diarrhoea), abdominal pain and occasionally haemolytic uremic syndrome (HUS), a serious condition that can lead to kidney failure and can be fatal.\nIf you are experiencing these symptoms, you should stay away from work, school or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others."
+    },
+    {
+      "id": "FSA-PRIN-39-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "A.Vogel recalls Rapunzel bioSnacky Das Original Red Clover",
+      "created": "2026-08-10",
+      "modified": "2026-08-10T15:49:00.442Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-39-2026",
+      "business": "A.Vogel Ltd",
+      "products": [
+        "Rapunzel bioSnacky Das Original Red Clover – Seeds for Sprouts and Seedlings"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Shiga toxin-producing E. coli (STEC) in the product listed above.\nSymptoms can include severe diarrhoea (including bloody diarrhoea), abdominal pain and occasionally haemolytic uremic syndrome (HUS), a serious condition that can lead to kidney failure and can be fatal.\nIf you are experiencing these symptoms, you should stay away from work, school or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others."
+    },
+    {
+      "id": "FSA-PRIN-38-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Greencore recalls three pasta products",
+      "created": "2026-08-07",
+      "modified": "2026-08-08T06:49:21.626Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-38-2026",
+      "business": "Greencore",
+      "products": [
+        "Asda Cheese & Tomato Pasta Salad",
+        "Asda Nacho Cheese Pasta Salad",
+        "Morrisons Chicken and Bacon Pasta"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of Listeria monocytogenes in the products listed above.\nSymptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis.   \nSome people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems.   "
+    },
+    {
+      "id": "FSA-AA-40-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "ASR Solutions Ltd recalls Lay's Sour Cream & Dill Crisps",
+      "created": "2026-07-31",
+      "modified": "2026-07-31T16:30:41.554Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-40-2026",
+      "business": "ASR Solutions Ltd",
+      "products": [
+        "Lay’s Sour Cream & Dill Crisps"
+      ],
+      "allergens": [
+        "Gluten",
+        "Milk",
+        "Wheat"
+      ],
+      "risk_statement": "Allergens: Milk and Wheat (Gluten)\nThe product contains milk and wheat (gluten), making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents, wheat or gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-AA-39-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Bon Bons Wholesale Ltd recalls various chocolate products because of undeclared milk and soya",
+      "created": "2026-07-25",
+      "modified": "2026-07-25T11:10:48.029Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-39-2026",
+      "business": "Bon Bons Wholesale Ltd",
+      "products": [
+        "Medium Coloured Ladybird",
+        "Small Red Ladybird",
+        "Large Red Heart",
+        "Mini Butterflies",
+        "Sports Car"
+      ],
+      "allergens": [
+        "Milk",
+        "Soya"
+      ],
+      "risk_statement": "Milk and soya\nThese products contain milk and soya making them a possible health risk for anyone with an allergy or intolerance to milk or milk constituents and/or an allergy to soya."
+    },
+    {
+      "id": "FSA-PRIN-37-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Graham’s Family Dairy recalls Graham’s Family Dairy Semi-Skimmed Milk due to the presence of veterinary medicines including antibiotics (penicillin)",
+      "created": "2026-07-22",
+      "modified": "2026-07-23T15:36:42.127Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-37-2026",
+      "business": "Graham’s Family Dairy",
+      "products": [
+        "Graham’s Family Dairy Semi-Skimmed Milk",
+        "Graham’s Family Dairy Semi-Skimmed Milk",
+        "Graham’s Family Dairy Semi-Skimmed Milk"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of veterinary medicines, including antibiotics in the product may make it unsafe to consume and may be a possible health risk for anyone with an allergy to antibiotics (penicillin)."
+    },
+    {
+      "id": "FSA-PRIN-36-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Waitrose & Partners recall Waitrose & Partners 8 Chocolate Chip Brioche Rolls because they may contain pieces of hard plastic and metal",
+      "created": "2026-07-21",
+      "modified": "2026-07-21T15:50:09.11Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-36-2026",
+      "products": [
+        "Waitrose & Partners 8 Chocolate Chip Brioche Rolls"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of hard plastic and metal, which makes the product unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-38-2026-update-1",
+      "type": "AA",
+      "status": "Published",
+      "title": "Update 1: PepsiCo recalls Doritos Chilli Heatwave",
+      "created": "2026-07-18",
+      "modified": "2026-07-20T08:16:45.261Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-38-2026-update-1",
+      "business": "Update 1: PepsiCo",
+      "products": [
+        "Doritos Chilli Heatwave",
+        "Doritos Chilli Heatwave"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Allergen: Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-38-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "PepsiCo recalls Doritos Chilli Heatwave",
+      "created": "2026-07-17",
+      "modified": "2026-07-17T20:16:28.573Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-38-2026",
+      "business": "PepsiCo",
+      "products": [
+        "Doritos Chilli Heatwave"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Allergen: Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-37-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Lidl Northern Ireland is recalling 1001 Delights Dubai Style",
+      "created": "2026-07-14",
+      "modified": "2026-07-14T16:19:36.901Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-37-2026",
+      "business": "Lidl Northern Ireland",
+      "products": [
+        "1001 Delights Dubai Style Pistachio Ice Cream"
+      ],
+      "allergens": [
+        "Cashew",
+        "Nuts"
+      ],
+      "risk_statement": "This product contains cashew (nuts) making it a possible health risk for anyone with an allergy to cashews."
+    },
+    {
+      "id": "FSA-PRIN-34-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Capri Sun UK recalls specific batches of Capri-Sun Orange 10 pack because they contain some cartons of Capri-Sun Zero which were filled with the full sugar variety",
+      "created": "2026-07-11",
+      "modified": "2026-07-11T11:38:25.159Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-34-2026",
+      "business": "Capri Sun UK",
+      "products": [
+        "Capri Sun Orange"
+      ],
+      "allergens": [],
+      "risk_statement": "Potential risk to consumers who need to manage their sugar intake."
+    },
+    {
+      "id": "FSA-PRIN-33-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "M&S recalls M&S Food Truffle Gouda (Listeria)",
+      "created": "2026-07-08",
+      "modified": "2026-07-08T12:44:39.944Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-33-2026",
+      "business": "M&S",
+      "products": [
+        "M&S Food Truffle Gouda"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the product listed in the table above. Symptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis. Some people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-AA-36-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Capsicana recalls Capsicana Easy Going Mild Salsa",
+      "created": "2026-07-03",
+      "modified": "2026-07-03T20:41:43.158Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-36-2026",
+      "business": "Capsicana",
+      "products": [
+        "Capsicana Easy Going MIld Salsa"
+      ],
+      "allergens": [
+        "Barley",
+        "Gluten",
+        "Mustard"
+      ],
+      "risk_statement": "Barley (Gluten), Mustard\nThis product contains barley (gluten) and mustard making it a possible health risk for anyone with an allergy to mustard and/or allergy or intolerance to barley or gluten, or with coeliac disease.    "
+    },
+    {
+      "id": "FSA-AA-35-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Dundeis UK Ltd recalls Minton & Donello Organic White Orzo",
+      "created": "2026-07-03",
+      "modified": "2026-07-03T14:34:28.318Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-35-2026",
+      "business": "Dundeis UK Ltd",
+      "products": [
+        "Minton & Donello Organic White Orzo"
+      ],
+      "allergens": [
+        "Gluten",
+        "Wheat"
+      ],
+      "risk_statement": "Wheat (gluten) \n \nThis product contains wheat making it a possible health risk for anyone with an allergy or intolerance to wheat or gluten or with coeliac disease. "
+    },
+    {
+      "id": "FSA-PRIN-32-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "O’Brien Fine Foods recalls ham products because of possible contamination with Listeria monocytogenes",
+      "created": "2026-07-01",
+      "modified": "2026-07-01T15:32:06.912Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-32-2026",
+      "business": "O’Brien Fine Foods",
+      "products": [
+        "Brady Family Crumb Irish Ham",
+        "Deluxe Honey Roast Carved Irish Ham",
+        "Deluxe Triple Oak Smoked Carved Irish Ham"
+      ],
+      "allergens": [],
+      "risk_statement": " The possible presence of Listeria monocytogenes in the products listed above. Symptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis. Some people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-PRIN-31-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Icesupp recalls icesupp mango & passionfruit, & mixed berry",
+      "created": "2026-06-26",
+      "modified": "2026-07-01T10:00:03.63Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-31-2026",
+      "business": "Icesupp",
+      "products": [
+        "icesupp mango & passionfruit",
+        "icesupp mango & passionfruit",
+        "icesupp mixed berries",
+        "icesupp mixed berries"
+      ],
+      "allergens": [],
+      "risk_statement": "A packaging defect which may cause risk of microbiological contamination."
+    },
+    {
+      "id": "FSA-AA-34-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "SPAR UK recalls Clayton Park Kitchen Chicken & Mushroom sauce because of undeclared soya  ",
+      "created": "2026-06-30",
+      "modified": "2026-06-30T18:37:16.177Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-34-2026",
+      "business": "SPAR UK",
+      "products": [
+        "Clayton Park Kitchen Chicken & Mushroom sauce"
+      ],
+      "allergens": [
+        "Soya"
+      ],
+      "risk_statement": "Soya\nThis product may contain soya, making it a possible health risk for anyone with an allergy to soya."
+    },
+    {
+      "id": "FSA-AA-33-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Morrisons recalls Morrisons Maple & Bacon Back of the Net because of undeclared milk",
+      "created": "2026-06-27",
+      "modified": "2026-06-27T14:23:11.017Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-33-2026",
+      "business": "Morrisons",
+      "products": [
+        "Morrisons Maple & Bacon Back of the Net"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-PRIN-30-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Ferrero UK recalls frozen Nutella Croissant because it may contain pieces of metal",
+      "created": "2026-06-25",
+      "modified": "2026-06-25T14:40:13.904Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-30-2026",
+      "business": "Ferrero UK",
+      "products": [
+        "Nutella Croissant"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of metal which makes the product unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-32-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Morrisons recalls Morrisons Coronation Chicken Pasta",
+      "created": "2026-06-24",
+      "modified": "2026-06-24T14:59:27.808Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-32-2026",
+      "business": "Morrisons",
+      "products": [
+        "Morrisons Coronation Chicken Pasta"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product may contain milk making it a possible health risk for anyone with an allergy to milk or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-PRIN-28-2026-update-1",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Update 1: Traditional Cheese Company recalls French Bries",
+      "created": "2026-06-24",
+      "modified": "2026-06-24T13:49:33.551Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-28-2026-update-1",
+      "business": "Traditional Cheese Company",
+      "products": [
+        "Dunnes Stores Velvety & Mild French Brie",
+        "Traditional Cheese Company French Brie"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the products listed above. Symptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis. Some people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-PRIN-29-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Prepworld recalls fruit products because of possible contamination with Salmonella",
+      "created": "2026-06-23",
+      "modified": "2026-06-23T19:28:34.541Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-29-2026",
+      "business": "Prepworld",
+      "products": [
+        "ASDA Pink Lady Apple, Mango, Strawberry & Blueberry",
+        "Morrisons Kiwi, Melon & Strawberries",
+        "Tesco Melon, Kiwi & Strawberry",
+        "Tesco Kiwi Fruit Pot",
+        "Waitrose Pink Lady Apple and Grapes",
+        "M&S Café Pink Lady Apple",
+        "M&S (FTG) Pink Lady Apple",
+        "M&S Pink Lady Apple Slices",
+        "Sainsbury’s Melon, Kiwi & Strawberry",
+        "Sainsbury’s Orange & Kiwi",
+        "Sainsbury’s Pink Lady Apple & Grape",
+        "Tesco Fruit Kebabs",
+        "Tesco Melon, Kiwi & Strawberry"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of Salmonella in the products listed above. Symptoms caused by Salmonella usually include fever, diarrhoea and abdominal cramps. If you are experiencing these symptoms, you should stay away from work, school or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others."
+    },
+    {
+      "id": "FSA-AA-31-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Krispy Kreme recalls Individual Pitch Perfect Doughnut",
+      "created": "2026-06-21",
+      "modified": "2026-06-21T14:00:51.718Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-31-2026",
+      "business": "Krispy Kreme",
+      "products": [
+        "Krispy Kreme Individual Pitch Perfect Doughnut",
+        "Krispy Kreme Match May Dozen"
+      ],
+      "allergens": [
+        "Hazelnut",
+        "Nuts"
+      ],
+      "risk_statement": "Hazelnuts (nuts)\nThese products may contain hazelnuts (nuts) making it a possible health risk for anyone with an allergy to hazelnuts (nuts)."
+    },
+    {
+      "id": "FSA-PRIN-28-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Traditional Cheese Company recalls French Bries",
+      "created": "2026-06-19",
+      "modified": "2026-06-19T17:20:58.542Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-28-2026",
+      "business": "Traditional Cheese Company",
+      "products": [
+        "Dunnes Stores Velvety & Mild French Brie",
+        "Traditional Cheese Company French Brie"
+      ],
+      "allergens": [],
+      "risk_statement": "The presence of Listeria monocytogenes in the products listed above. Symptoms caused by Listeria monocytogenes can be similar to flu and include high temperature, muscle ache or pain, chills, feeling or being sick and diarrhoea. However, in rare cases, the infection can be more severe, causing serious complications, such as meningitis. Some people are more vulnerable to listeria infections, including those over 65 years of age, pregnant women and their unborn babies, babies less than one month old and people with weakened immune systems."
+    },
+    {
+      "id": "FSA-AA-30-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Buttermilk Confections is recalling Honeycomb Blast Choc Bar because of undeclared milk",
+      "created": "2026-06-11",
+      "modified": "2026-06-11T17:13:26.744Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-30-2026",
+      "business": "Buttermilk Confections",
+      "products": [
+        "Honeycomb Blast Choc Bar"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Allergen(s): Milk\nThis product contains milk (casein) making it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents. "
+    },
+    {
+      "id": "FSA-PRIN-27-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Dalston Soda Company recalls Dalston Pineapple Soda",
+      "created": "2026-06-05",
+      "modified": "2026-06-05T18:42:14.245Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-prin-27-2026",
+      "business": "Dalston Soda Company",
+      "products": [
+        "Dalston’s Pineapple Soda single cans",
+        "Dalston’s Pineapple Soda multipack"
+      ],
+      "allergens": [],
+      "risk_statement": "There is a risk that the cans may break apart unexpectedly which may cause injury."
+    },
+    {
+      "id": "FSA-AA-29-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Waitrose & Partners recalls Waitrose & Partners 4 Richly Fruited Hot Cross Buns because of undeclared barley",
+      "created": "2026-06-04",
+      "modified": "2026-06-04T18:31:33.059Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-aa-29-2026",
+      "business": "Waitrose & Partners",
+      "products": [
+        "Waitrose & Partners 4 Richly Fruited Hot Cross Buns"
+      ],
+      "allergens": [
+        "Barley",
+        "Gluten"
+      ],
+      "risk_statement": "Barley\nThis product contains barley making it a possible health risk for anyone with an allergy to barley."
+    },
+    {
+      "id": "FSA-FAFA-01-2026",
+      "type": "FAFA",
+      "status": "Published",
+      "title": "Food Alert \"For Action\": To: Food Businesses and Consumers who have purchased and sold frozen products supplied by Inarah’s Frozen Foods Ltd",
+      "created": "2026-06-04",
+      "modified": "2026-06-04T13:55:41.017Z",
+      "alert_url": "https://alerts.food.gov.uk/news-alerts/alert/fsa-fafa-01-2026",
+      "business": "Food businesses selling these products in the UK are advised to immediately stop sales, undertake product withdrawals and where there have been retail sales, to undertake product",
+      "products": [
+        "Inarah’s Frozen Foods – All Frozen Products",
+        "Inarah’s Fine Foods – All Frozen Products",
+        "New York Crispy – All Frozen Products"
+      ],
+      "allergens": [],
+      "risk_statement": "Inarah’s Frozen Foods Ltd has been unable to demonstrate that the products in this alert have been produced and handled safely. Products that have not met food hygiene and safety requirements pose a risk to consumers and may be unsafe to eat. The products are known to have been supplied to food businesses across the UK.\nPhotos of these brand labels are attached below. These brands cover a wide range of frozen products including chicken, beef, fish and vegetarian items, packaged in different size packaging with multiple best before dates and/or batch numbers. These products have one of the below company names and addresses on the labels:\nInarah Frozen Foods LTD, Regal Drive, Walsall, WS2 9HQ\nFour Seasons Food Group, Unit 7-8 Monarch Works, Elswick Road, Fenton Industrial Estate, Stoke-on-Trent, ST4 2SH\nKBH Foods, BD9 4TS\nAll frozen products with either “Inarah’s Frozen Foods”, “Inarah’s Fine Foods” or “New York Crispy” with one of the above addresses are included in this alert.\nFood businesses selling these products in the UK are advised to immediately stop sales, undertake product withdrawals and where there have been retail sales, to undertake product recalls. Products should be disposed of safely."
+    },
+    {
+      "id": "FSA-AA-28-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Gü recalls Gü Double Sea Salted Caramel Frozen Dessert because of undeclared hazelnuts (nuts) and soya",
+      "created": "2026-05-28",
+      "modified": "2026-05-28T18:18:43.856Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-28-2026",
+      "business": "Gü",
+      "products": [
+        "Gü Double Sea Salted Caramel Frozen Dessert"
+      ],
+      "allergens": [
+        "Hazelnut",
+        "Nuts",
+        "Soya"
+      ],
+      "risk_statement": "Hazelnuts (nuts) and soya\nThis product may contain hazelnuts (nuts) and soya lecithin (soya) making it a possible health risk for anyone with an allergy to hazelnuts (nuts) and/or with an allergy to soya."
+    },
+    {
+      "id": "FSA-PRIN-26-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Fox’s Burton’s Companies (FBC) UK recalls Arran Fine Foods Caramelised Red Onion Chutney because it may contain pieces of metal",
+      "created": "2026-05-28",
+      "modified": "2026-05-28T16:19:31.335Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-26-2026",
+      "business": "Fox’s Burton’s Companies (FBC) UK",
+      "products": [
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney",
+        "Arran Fine Foods Caramelised Red Onion Chutney"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of metal, which makes the product unsafe to eat."
+    },
+    {
+      "id": "FSA-PRIN-25-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Morrisons recalls Morrisons Savers Cashews",
+      "created": "2026-05-26",
+      "modified": "2026-05-26T17:11:12.534Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-25-2026",
+      "business": "Morrisons",
+      "products": [
+        "Morrisons Savers Cashews"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of glass in the product which makes it unsafe to eat."
+    },
+    {
+      "id": "FSA-PRIN-24-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "One Living Organic Raspberry & Pomegranate Kombucha recalled",
+      "created": "2026-05-22",
+      "modified": "2026-05-22T17:23:41.831Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-24-2026",
+      "business": "One Living",
+      "products": [
+        "One Living Organic Raspberry & Pomegranate Kombucha"
+      ],
+      "allergens": [],
+      "risk_statement": "There is a risk that the bottle caps may pop off unexpectedly which may cause injury."
+    },
+    {
+      "id": "FSA-AA-27-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Sunrise International Foods Ltd recalls Shama Falooda Almond flavour drink because of undeclared milk",
+      "created": "2026-05-22",
+      "modified": "2026-05-22T15:30:08.699Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-27-2026",
+      "business": "Sunrise International Foods Ltd",
+      "products": [
+        "Shama Falooda Almond flavour drink"
+      ],
+      "allergens": [
+        "Milk"
+      ],
+      "risk_statement": "Milk\nThis product contains milk making it a possible health risk for anyone with an allergy to milk or intolerance to milk or milk constituents."
+    },
+    {
+      "id": "FSA-AA-26-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Divilly Brothers No Added Nitrite Crumbed Ham recalled",
+      "created": "2026-05-21",
+      "modified": "2026-05-21T15:20:35.774Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-26-2026",
+      "business": "Divilly’s",
+      "products": [
+        "Divilly Brothers No Added Nitrite Crumbed Ham"
+      ],
+      "allergens": [
+        "Gluten",
+        "Wheat"
+      ],
+      "risk_statement": "This product contains wheat (gluten), making it a possible health risk for anyone with an allergy or intolerance to wheat or gluten, or with coeliac disease."
+    },
+    {
+      "id": "FSA-PRIN-23-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Glenisk recalls Organic Baby Fromage Frais due to the possible presence of mould",
+      "created": "2026-05-20",
+      "modified": "2026-05-20T14:05:52.451Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-23-2026",
+      "business": "Glenisk",
+      "products": [
+        "Organic Baby Fromage Frais mango with apple, banana & oats",
+        "Organic Baby Fromage Frais strawberry with banana, vanilla & oats",
+        "Organic Baby Fromage Frais apple, pear, carrot with oats"
+      ],
+      "allergens": [],
+      "risk_statement": "These products may contain mould which makes them unfit for human consumption."
+    },
+    {
+      "id": "FSA-AA-25-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Filippo Berio UK recalls Hot Chilli Pesto because of undeclared fish",
+      "created": "2026-05-16",
+      "modified": "2026-05-16T11:10:31.737Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-25-2026",
+      "business": "Filippo Berio UK",
+      "products": [
+        "Hot Chilli Pesto"
+      ],
+      "allergens": [
+        "Fish"
+      ],
+      "risk_statement": "Fish\nThis product contains fish making it a possible health risk for anyone with an allergy to fish"
+    },
+    {
+      "id": "FSA-AA-24-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Daylesford Organic Ltd recalls Daylesford Organic Minestrone Soup with Cannellini Beans, Pasta Shells & Olive Oil because wheat (gluten) is not emphasised on the label",
+      "created": "2026-05-06",
+      "modified": "2026-05-06T20:07:51.21Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-24-2026",
+      "business": "Daylesford Organic Ltd",
+      "products": [
+        "Daylesford Organic Minestrone Soup with Cannellini Beans, Pasta Shells and Olive Oil"
+      ],
+      "allergens": [
+        "Gluten",
+        "Wheat"
+      ],
+      "risk_statement": "Allergens: Wheat (Gluten)\nThe product contains wheat (gluten), making it a health risk to those with an allergy or intolerance to wheat or gluten, or those with coeliac disease."
+    },
+    {
+      "id": "FSA-PRIN-22-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "ASDA recalls Exceptional by ASDA Beer Battered Cod Fishcakes",
+      "created": "2026-04-30",
+      "modified": "2026-04-30T16:07:36.648Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-22-2026",
+      "business": "ASDA",
+      "products": [
+        "Exceptional by ASDA Beer Battered Cod Fishcakes"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of plastic or metal, which makes the product unsafe to eat."
+    },
+    {
+      "id": "FSA-PRIN-21-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Goodlife recalls Goodlife Spicy Bean Burger",
+      "created": "2026-04-30",
+      "modified": "2026-04-30T15:48:10.131Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-21-2026",
+      "business": "Goodlife",
+      "products": [
+        "Goodlife Spicy Bean Burger (4 pack)"
+      ],
+      "allergens": [],
+      "risk_statement": "This product may contain pieces of plastic, which makes the product unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-23-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "HiPP Organic UK recalls 7+ months Vegetable Lasagne",
+      "created": "2026-04-24",
+      "modified": "2026-04-24T18:21:08.645Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-23-2026",
+      "business": "HiPP Organic UK",
+      "products": [
+        "7+ months Vegetable Lasagne jar"
+      ],
+      "allergens": [
+        "Celery"
+      ],
+      "risk_statement": "Allergen: Celery\nThis product contains celeriac making it a possible health risk for anyone with an allergy to celery."
+    },
+    {
+      "id": "FSA-PRIN-20-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Good4U recalls Super Sprouts Super Greens",
+      "created": "2026-04-22",
+      "modified": "2026-04-22T12:25:31.653Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-20-2026",
+      "business": "Good4U",
+      "products": [
+        "Good4U Super Sprouts Super Greens"
+      ],
+      "allergens": [],
+      "risk_statement": "The possible presence of Salmonella in the product listed above. Symptoms caused by Salmonella usually include fever, diarrhoea and abdominal cramps. If you are experiencing these symptoms, you should stay away from work, school or nursery until you have stopped having symptoms for at least 48 hours to avoid passing it on to others."
+    },
+    {
+      "id": "FSA-PRIN-19-2026-update-1",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Update 1: Saffron Pastries recalls various Saffron Pastries products because of potential rodent contamination",
+      "created": "2026-04-20",
+      "modified": "2026-04-21T10:02:37.604Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-19-2026-update-1",
+      "business": "Saffron Pastries",
+      "products": [
+        "Almond Biscuits",
+        "Almond Madeira Slice",
+        "Coconut Slice",
+        "Cream Roll",
+        "Family Almond Cake Rusk",
+        "Family Cake Rusk (Updated)",
+        "Fruit Madeira Slice",
+        "Fruit Slice",
+        "Jam Biscuits (Updated)",
+        "Lemon Slice",
+        "Original Cake Rusk",
+        "Original Cake Rusk",
+        "Almond Slice",
+        "Pistachio Biscuits",
+        "Plain Madeira Slice",
+        "Triple Pack Variety Madeira",
+        "Twin Pack Madeira",
+        "Vanilla Slice",
+        "Angel Slice",
+        "Cake Rusk Soonfi (Updated)",
+        "Cake Rusk Soonfi (Updated)",
+        "Cherry Madeira Slice",
+        "Chocolate Slice (Updated)",
+        "Coconut Biscuits",
+        "Coconut Madeira Slice"
+      ],
+      "allergens": [],
+      "risk_statement": "These products may have been contaminated by rodents making them unsafe to eat."
+    },
+    {
+      "id": "FSA-AA-22-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Marks & Spencer is recalling Authentic Greek Yoghurt with Vanilla because of undeclared gluten",
+      "created": "2026-04-18",
+      "modified": "2026-04-18T15:48:36.302Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-22-2026",
+      "business": "Marks & Spencer",
+      "products": [
+        "Authentic Greek Yoghurt with Vanilla"
+      ],
+      "allergens": [
+        "Gluten"
+      ],
+      "risk_statement": "Gluten\nThis product may contain gluten making it a possible health risk for anyone with an allergy or intolerance to gluten or have coeliac disease."
+    },
+    {
+      "id": "FSA-AA-21-2026",
+      "type": "AA",
+      "status": "Published",
+      "title": "Millennium Peanuts Caramel Milk Chocolate recalled",
+      "created": "2026-04-17",
+      "modified": "2026-04-17T18:53:11.901Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-aa-21-2026",
+      "business": "Loudwater Trade & Finance Ltd",
+      "products": [
+        "Millennium Peanuts Caramel Milk Chocolate"
+      ],
+      "allergens": [
+        "Almond",
+        "Cashew",
+        "Gluten",
+        "Hazelnut",
+        "Milk",
+        "Nuts",
+        "Peanuts",
+        "Soya"
+      ],
+      "risk_statement": "Allergens: Almonds, Cashew Nuts, Cereals containing Gluten, Hazelnuts, Milk, Peanuts, Soya.\nThis product contains milk, peanuts and soya, and may contain almonds, cashew nuts, cereals containing gluten, and hazelnuts. This makes it a possible health risk for anyone with an allergy or intolerance to milk or milk constituents, an allergy to peanuts, soya, almonds, cashew nuts, an allergy or intolerance to cereals containing gluten or coeliac disease, and/or an allergy to hazelnuts."
+    },
+    {
+      "id": "FSA-PRIN-19-2026",
+      "type": "PRIN",
+      "status": "Published",
+      "title": "Saffron Pastries recalls various Saffron Pastries products because of potential rodent contamination",
+      "created": "2026-04-16",
+      "modified": "2026-04-16T18:37:37.164Z",
+      "alert_url": "https://www.food.gov.uk/news-alerts/alert/fsa-prin-19-2026",
+      "business": "Saffron Pastries",
+      "products": [
+        "Almond Biscuits",
+        "Almond Madeira Slice",
+        "Coconut Slice",
+        "Cream Roll",
+        "Family Almond Cake Rusk",
+        "Family Cake Rusk",
+        "Fruit Madeira Slice",
+        "Fruit Slice",
+        "Jam Biscuits",
+        "Lemon Slice",
+        "Original Cake Rusk",
+        "Original Cake Rusk",
+        "Almond Slice",
+        "Pistachio Biscuits",
+        "Plain Madeira Slice",
+        "Triple Pack Variety Madeira",
+        "Twin Pack Madeira",
+        "Vanilla Slice",
+        "Angel Slice",
+        "Cake Rusk Soonfi",
+        "Cake Rusk Soonfi",
+        "Cherry Madeira Slice",
+        "Chocolate Slice",
+        "Coconut Biscuits",
+        "Coconut Madeira Slice"
+      ],
+      "allergens": [],
+      "risk_statement": "These products may have been contaminated by rodents making them unsafe to eat."
+    }
+  ],
+  "count": 50
+}

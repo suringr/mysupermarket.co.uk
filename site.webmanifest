@@ -1,0 +1,20 @@
+{
+    "name": "MySupermarket",
+    "short_name": "MySupermarket",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0f3460",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
