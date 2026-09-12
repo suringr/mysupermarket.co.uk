@@ -1,0 +1,225 @@
+:root {
+    --bg-color: #111;
+    --card-bg: #1a1a1a;
+    --text-primary: #eee;
+    --text-secondary: #aaa;
+    --accent: #0f0;
+    --accent-warn: #fb0;
+    --accent-bad: #f55;
+    --accent-info: #2196f3;
+    --border: #333;
+}
+
+/* Utility Classes for Dynamic Styling */
+.border-left-info {
+    border-left: 5px solid var(--accent-info);
+}
+
+.border-left-good {
+    border-left: 5px solid var(--accent);
+}
+
+.border-left-bad {
+    border-left: 5px solid var(--accent-bad);
+}
+
+.border-left-warn {
+    border-left: 5px solid var(--accent-warn);
+}
+
+.text-info {
+    color: var(--accent-info);
+}
+
+.text-good {
+    color: var(--accent);
+}
+
+.text-bad {
+    color: var(--accent-bad);
+}
+
+.text-warn {
+    color: var(--accent-warn);
+}
+
+.action-link {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--accent-info);
+}
+
+.card-placeholder {
+    opacity: 0.6;
+}
+
+.meta-summary {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.hub-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.hub-nav a {
+    color: var(--text-secondary);
+}
+
+.hub-nav a.active {
+    color: var(--text-primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.confidence-pill {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px 8px;
+    background: #444;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.section-spacer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.section-top {
+    margin-top: 40px;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grid,
+.signal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    display: block;
+    /* Essential for <a> tags */
+    text-decoration: none;
+    /* Redundant but safe */
+}
+
+/* Trend Colors */
+.trend-up {
+    color: var(--accent-bad);
+}
+
+/* Rising inflation/prices = Bad */
+.trend-down {
+    color: var(--accent);
+}
+
+/* Easing = Good */
+.trend-flat {
+    color: var(--accent-warn);
+}
+
+.card:hover {
+    border-color: #555;
+}
+
+.status {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #333;
+}
+
+.status.fresh,
+.status.active {
+    color: var(--accent);
+}
+
+.status.rising {
+    color: var(--accent-bad);
+}
+
+.status.stable {
+    color: #fff;
+}
+
+.status.easing {
+    color: var(--accent);
+}
+
+.status.unknown {
+    color: var(--text-secondary);
+}
+
+.meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.back-link {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
