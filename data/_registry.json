@@ -1,0 +1,23 @@
+[
+  {
+    "id": "alerts",
+    "title": "Safety Alerts",
+    "type": "alerts-recalls",
+    "status": "fresh",
+    "updated": "2026-10-03T20:42:47.384Z"
+  },
+  {
+    "id": "uk.food-inflation",
+    "title": "UK Food Inflation (CPI)",
+    "type": "inflation-trends",
+    "status": "fresh",
+    "updated": "2026-10-03T20:42:47.545Z"
+  },
+  {
+    "id": "uk.eggs.pressure",
+    "title": "Eggs",
+    "type": "price-pressure",
+    "status": "fresh",
+    "updated": "2026-10-03T20:42:47.698Z"
+  }
+]
